@@ -1,0 +1,40 @@
+.header {
+    background: #131313;
+    padding: 22px 0;
+
+    .navbar {
+        text-transform: uppercase;
+        width: calc(100% - 82px);
+        margin-left: auto;
+        padding: 0;
+
+        &-brand {
+            color: $yellow;
+            font-family: $fdc;
+            font-size: 14px;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+
+        &-nav {
+            font-family: $fbc;
+            justify-content: space-evenly;
+            width: 100%;
+
+            .nav-link {
+                color: #fff;
+                font-size: 14px;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+
+            .nav-btn {
+                @include btn(161px, 37px, 13px, $yellow);
+            }
+        }
+    }
+}

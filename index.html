@@ -11,52 +11,77 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">measurements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">+7 (928) 768-32-39</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-btn">request a call</button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">measurements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-btn">request a call</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
     <main class="main">
         <section class="home">
             <div class="container">
-
+                <div class="home__bg">
+                    <div class="wrapper">
+                        <h1 class="home__title">Turnkey Repair in the <br>
+                            city of <span>Rostov-on-Don</span></h1>
+                        <h2 class="home__descr">Get ready-made turnkey repairs on time
+                            with work time saving up to 45 days and 20% from
+                            cost of materials due to the organization of work</h2>
+                        <div class="home__buttons">
+                            <button class="home__btn">calculate the cost</button>
+                            <button class="home__btn">submit your application</button>
+                        </div>
+                        <div class="home__link">instagram</div>
+                    </div>
+                </div>
+                <div class="home__scroll-down">
+                    <div>Scroll down</div>
+                    <a href="#projects"><img src="./src/images/svg/scroll-down.svg" alt="scroll-down"></a>
+                </div>
             </div>
         </section>
 
-        <section class="projects">
-            <div class="container"></div>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="projects__bg">
+                    <div class="wrapper"></div>
+                </div>
+
+            </div>
         </section>
 
         <section class="video">
@@ -107,6 +132,7 @@
     <footer class="footer">
 
     </footer>
+    <link rel="stylesheet" href="./src/fonts/Futura/stylesheet.css">
     <link rel="stylesheet" href="./src/libs/fancybox/jquery.fancybox.min.css">
     <script src="./src/libs/jquery/jquery.min.js"></script>
     <script src="./src/libs/fancybox/jquery.fancybox.min.js"></script>
