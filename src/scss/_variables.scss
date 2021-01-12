@@ -20,3 +20,15 @@ $yo: 'Yeseva One';
         outline: none;
     }
 }
+
+@mixin owl-nav {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 8px;
+    background: none;
+
+    &:hover {
+        background: none;
+    }
+}

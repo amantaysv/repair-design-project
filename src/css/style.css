@@ -1,3 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+}
+
 .header {
   background: #131313;
   padding: 22px 0;
@@ -55,6 +67,7 @@
 }
 
 .home {
+  position: relative;
   background: #131313;
 }
 
@@ -170,10 +183,10 @@
 
 .home__scroll-down {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   padding: 0 48px;
-  width: 247px;
-  height: 97px;
+  width: 250px;
+  height: 100px;
   background: #131313;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,10 +205,147 @@
 
 .projects {
   background: #131313;
+  color: #ffffff;
 }
 
 .projects__bg {
-  padding: 107px 0 257px;
+  padding: 107px 130px 257px 100px;
   background: url(../images/projects__bg.png);
+}
+
+.projects__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  margin-bottom: 53px;
+  padding: 0;
+}
+
+.projects__tab {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 60px;
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+}
+
+.projects__tab_active {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+  cursor: pointer;
+}
+
+.projects__tab:hover {
+  color: #E3B873;
+  cursor: pointer;
+}
+
+.projects__tab p {
+  margin-bottom: 5px;
+}
+
+.projects__content {
+  position: relative;
+  display: none;
+}
+
+.projects__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects__about {
+  position: relative;
+  max-width: 420px;
+  width: 100%;
+  margin-right: 80px;
+}
+
+.projects__title {
+  width: 253px;
+  position: relative;
+  font-family: "Yeseva One";
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin-bottom: 34px;
+}
+
+.projects__title::before {
+  position: absolute;
+  content: '';
+  width: 92px;
+  height: 1px;
+  background: #E3B873;
+  bottom: 20px;
+  right: 0;
+}
+
+.projects__descr {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 42px;
+}
+
+.projects .row .col .wrapper {
+  margin-bottom: 34px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.projects .row .col .wrapper span {
+  display: block;
+  font-family: "Yeseva One";
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin-bottom: 9px;
+}
+
+.projects .owl-carousel {
+  width: calc(100% - 500px);
+  position: static;
+}
+
+.projects .owl-nav .owl-prev {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 8px;
+  background: none;
+  left: 0;
+}
+
+.projects .owl-nav .owl-prev:hover {
+  background: none;
+}
+
+.projects .owl-nav .owl-next {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 8px;
+  background: none;
+  left: 174px;
+}
+
+.projects .owl-nav .owl-next:hover {
+  background: none;
+}
+
+.projects .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 72px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
