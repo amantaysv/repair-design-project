@@ -12,21 +12,8 @@ $(document).ready(function () {
   });
 });
 
-$('ul.projects__caption').on('click', 'li:not(.projects__tab_active)', function () {
+$('ul.completed-projects__caption').on('click', 'li:not(.completed-projects__tab_active)', function () {
   $(this)
-    .addClass('projects__tab_active').siblings().removeClass('projects__tab_active')
-    .closest('div.projects__tabs').find('div.projects__content').removeClass('projects__content_active').eq($(this).index()).addClass('projects__content_active');
+    .addClass('completed-projects__tab_active').siblings().removeClass('completed-projects__tab_active')
+    .closest('div.completed-projects__tabs').find('div.completed-projects__content').removeClass('completed-projects__content_active').eq($(this).index()).addClass('completed-projects__content_active');
 });
-
-function toggleSlide(item) {
-  $(item).each(function (i) {
-    $(this).on('click', function (e) {
-      e.preventDefault();
-      $('.projects-item__content').eq(i).toggleClass('projects-item__content_active');
-      $('.projects-item__about').eq(i).toggleClass('projects-item__about_active');
-    });
-  });
-}
-
-toggleSlide('.projects-item__link');
-toggleSlide('.projects-item__back');

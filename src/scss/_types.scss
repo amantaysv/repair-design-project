@@ -1,0 +1,70 @@
+.types {
+    margin-top: 148px;
+    text-align: center;
+
+    &__title {
+        font-family: $yo;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #181818;
+    }
+
+    &__icon {
+        @include icon;
+    }
+
+    .row {
+        max-width: 1238px;
+        margin: 0 auto;
+
+        .col {
+            margin-top: 31px;
+
+            .card {
+                max-width: 392px;
+                position: relative;
+                min-height: 606px;
+                background: transparent;
+                box-shadow: none;
+                margin: 0 auto;
+
+                &-body {
+                    padding: 25px 2rem;
+                    width: 80%;
+                    background: #fff;
+                    box-shadow: 0 0 10px #00000030;
+                    position: absolute;
+                    left: 50%;
+                    top: 294px;
+                    transform: translate(-50%);
+                    text-align: left;
+                }
+
+                &-title {
+                    color: #363636;
+                    font-family: $yo;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: bold;
+                }
+
+                &-text {
+                    color: #959595;
+                    font-family: $fbc;
+                    font-size: 15px;
+                    line-height: 25.5px;
+                    padding-left: 1rem;
+                }
+
+                .btn {
+                    @include btn (228px, 54px, 18px, $yo);
+                    position: absolute;
+                    left: 39px;
+                    bottom: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

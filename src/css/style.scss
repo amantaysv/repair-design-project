@@ -1,14 +1,26 @@
+@import url(../libs/mdb-ui-kit/css/mdb.min.css);
+@import url(../libs/fancybox/css/jquery.fancybox.min.css);
+@import url(../libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css);
+@import url(../libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css);
+@import url(../fonts/Futura/stylesheet.css);
+@import url(../fonts/YesevaOne/stylesheet.css);
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.container {
-    max-width: 1440px;
+
+.bg-image {
+    overflow: visible;
 }
 
 @import "../scss/variables";
 @import "../scss/header";
 @import "../scss/home";
-@import "../scss/projects";
+@import "../scss/completed-projects";
+@import "../scss/registration";
+@import "../scss/types";
+@import "../scss/request";
+@import "../scss/fantasies";

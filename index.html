@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-spy" data-offset="0">
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav id="navbar-spy" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
                 <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav smooth-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#home">home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects</a>
+                            <a class="nav-link ripple" href="#projects">projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">measurements</a>
@@ -41,60 +41,59 @@
                             <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-btn">request a call</button>
+                            <button class="btn">request a call</button>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-
     </header>
-
+<p>text</p>
     <main class="main">
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
-                <div class="home__bg">
+                <div class="home__bg bg-image">
+                    <div class="mask"></div>
                     <div class="wrapper">
                         <h1 class="home__title">Turnkey Repair in the <br>
                             city of <span>Rostov-on-Don</span></h1>
                         <h2 class="home__descr">Get ready-made turnkey repairs on time
                             with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work</h2>
-                        <div class="home__buttons">
-                            <button class="home__btn">calculate the cost</button>
-                            <button class="home__btn">submit your application</button>
-                        </div>
+                        <form class="home__form">
+                            <button class="btn">calculate the cost</button>
+                            <button class="btn">submit your application</button>
+                        </form>
                         <div class="home__link">instagram</div>
                     </div>
                 </div>
                 <div class="home__scroll-down">
                     <div>Scroll down</div>
-                    <a href="#projects"><img src="./src/images/svg/scroll-down.svg" alt="scroll-down"></a>
+                    <a href="#completed-projects"><img src="./src/images/svg/scroll-down.svg" alt="scroll-down"></a>
                 </div>
             </div>
         </section>
 
-        <section class="projects" id="projects">
+        <section class="completed-projects" id="completed-projects">
             <div class="container">
-                <div class="projects__bg">
-                    <div class="projects__tabs">
-                        <ul class="projects__caption">
-                            <li class="projects__tab projects__tab_active">
+                <div class="completed-projects__bg">
+                    <div class="completed-projects__tabs">
+                        <ul class="completed-projects__caption">
+                            <li class="completed-projects__tab completed-projects__tab_active">
                                 <p>Rostov-on-Don, Admiral</p>
                             </li>
-                            <li class="projects__tab">
+                            <li class="completed-projects__tab">
                                 <p>Sochi Thieves</p>
                             </li>
-                            <li class="projects__tab">
+                            <li class="completed-projects__tab">
                                 <p>Rostov-on-Don Patriotic</p>
                             </li>
                         </ul>
-                        <div class="projects__content projects__content_active">
-                            <div class="projects__about">
-                                <div class="projects__title">Completed projects</div>
-                                <div class="projects__descr">Only a small part of the work performed by our company
-                                    is
-                                    presented on the site. For 14 years on in the construction
+                        <div class="completed-projects__content completed-projects__content_active">
+                            <div class="completed-projects__about">
+                                <div class="completed-projects__title">Completed-projects</div>
+                                <div class="completed-projects__descr">Only a small part of the work performed by our
+                                    company is presented on the site. For 14 years on in the construction
                                     market we have made happy more than 1000 families</div>
                                 <div class="row">
                                     <div class="col">
@@ -123,11 +122,14 @@
                             <div class="owl-carousel owl-theme owl-loaded">
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/1-1.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/1-1.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/1-2.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/1-2.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/1-3.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/1-3.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -141,12 +143,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="projects__content">
-                            <div class="projects__about">
-                                <div class="projects__title">Completed projects</div>
-                                <div class="projects__descr">Only a small part of the work performed by our company
-                                    is
-                                    presented on the site. For 14 years on in the construction
+                        <div class="completed-projects__content">
+                            <div class="completed-projects__about">
+                                <div class="completed-projects__title">completed-projects</div>
+                                <div class="completed-projects__descr">Only a small part of the work performed by our
+                                    company is presented on the site. For 14 years on in the construction
                                     market we have made happy more than 1000 families</div>
                                 <div class="row">
                                     <div class="col">
@@ -175,11 +176,14 @@
                             <div class="owl-carousel owl-theme owl-loaded">
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/2-1.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/2-1.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/2-2.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/2-2.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/2-3.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/2-3.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -193,12 +197,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="projects__content">
-                            <div class="projects__about">
-                                <div class="projects__title">Completed projects</div>
-                                <div class="projects__descr">Only a small part of the work performed by our company
-                                    is
-                                    presented on the site. For 14 years on in the construction
+                        <div class="completed-projects__content">
+                            <div class="completed-projects__about">
+                                <div class="completed-projects__title">completed-projects</div>
+                                <div class="completed-projects__descr">Only a small part of the work performed by our
+                                    company is presented on the site. For 14 years on in the construction
                                     market we have made happy more than 1000 families</div>
                                 <div class="row">
                                     <div class="col">
@@ -227,11 +230,14 @@
                             <div class="owl-carousel owl-theme owl-loaded">
                                 <div class="owl-stage-outer">
                                     <div class="owl-stage">
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/3-1.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/3-1.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/3-2.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/3-2.jpg" alt="">
                                         </div>
-                                        <div class="owl-item"><img src="./src/images/projects__carousel/3-3.jpg" alt="">
+                                        <div class="owl-item"><img
+                                                src="./src/images/completed-projects__carousel/3-3.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -246,25 +252,172 @@
                             </div>
                         </div>
                     </div>
+                    <div class="completed-projects__footer">online control
+                        <div class="completed-projects__footer-icon">
+                            <img src="./src/images/svg/camera.svg" alt="">
+                        </div>
+                        <div class="completed-projects__footer-video">
+                            <div class="completed-projects__footer-video-bg bg-image">
+                                <div class="mask"></div>
+                                <a data-fancybox href="https://www.youtube.com/watch?v=5qap5aO4i9A" data-width="1100"
+                                    data-height="620">
+                                    <span class="completed-projects__footer-video-btn"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
+            </div>
             </div>
         </section>
 
         <section class="registration">
-            <div class="container"></div>
-        </section>
-
-        <section class="types">
-            <div class="container"></div>
-        </section>
-
-        <section class="request">
-            <div class="container"></div>
+            <div class="container">
+                <div class="registration__bg">
+                    <div class="registration__descr">
+                        At each facility, a camera is installed that broadcasts the progress of work on the clock <br>
+                        At any time, you can go to our website and monitor the progress of work in your <br> apartment.
+                        You can watch the live broadcast from one of our facilities! <br>
+                        Leave a request below and you will receive a link to the broadcast.
+                    </div>
+                    <form class="registration__form">
+                        <div class="row">
+                            <label for="" class="label">
+                                <div class="text">Name</div>
+                                <input type="text" class="input" required placeholder="What is your name:">
+                            </label>
+                            <label for="" class="label">
+                                <div class="text">Phone</div>
+                                <input type="tel" class="input" required placeholder="Your phone number:">
+                            </label>
+                            <button class="btn">submit</button>
+                        </div>
+                        <label for="" class="checkbox">
+                            I agree to the processing of personal data
+                            <input type="checkbox" class="input" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                    <div class="types">
+                        <h2 class="types__title">types of repair</h2>
+                        <div class="types__icon">
+                            <img src="./src/images/svg/types__icon.svg" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <img src="./src/images/types-of-repair/card-image1.png" class="card-img-top"
+                                        alt="" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Redecorating</h4>
+                                        <ul class="card-text">
+                                            <li> Dismantling of old coatings</li>
+                                            <li> Wallpapering</li>
+                                            <li> Painting walls and ceilings</li>
+                                            <li> Laying flooring</li>
+                                            <li> Replacing plumbing</li>
+                                            <li> Replacing sockets and switches</li>
+                                            <li> Replacing doors</li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn">from 900 rub / m2</button>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <img src="./src/images/types-of-repair/card-image2.png" class="card-img-top"
+                                        alt="" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Overhaul</h4>
+                                        <ul class="card-text">
+                                            <li> Dismantling of old coatings</li>
+                                            <li> Wallpapering</li>
+                                            <li> Painting walls and ceilings</li>
+                                            <li> Laying flooring</li>
+                                            <li> Replacing plumbing</li>
+                                            <li> Replacing sockets and switches</li>
+                                            <li> Replacing doors</li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-primary">from 1800 rub / m2</button>
+                                </div>
+                            </div>
+                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <img src="./src/images/types-of-repair/card-image3.png" class="card-img-top"
+                                        alt="" />
+                                    <div class="card-body">
+                                        <h4 class="card-title">Designer Repair</h4>
+                                        <ul class="card-text">
+                                            <li> Dismantling of old coatings</li>
+                                            <li> Wallpapering</li>
+                                            <li> Painting walls and ceilings</li>
+                                            <li> Laying flooring</li>
+                                            <li> Replacing plumbing</li>
+                                            <li> Replacing sockets and switches</li>
+                                            <li> Replacing doors</li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-primary">from 4000 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request__bg">
+                            <span class="item-1">01</span>
+                            <span class="item-2">Our specialist will arrive for measurements per day <br>
+                                contact, or appoint a date convenient for you</span>
+                            <span class="item-3">02</span>
+                            <span class="item-4">Free metering</span>
+                            <span class="item-5">03</span>
+                            <span class="item-6">Free consultation</span>
+                            <span class="item-7">04</span>
+                            <span class="item-8">Get a cost estimate and <br>
+                                the timing of your future repairs</span>
+                        </div>
+                        <form class="request__form">
+                            <div class="title">Leave a request for free <br>
+                                departure of the measurer
+                            </div>
+                            <label for="" class="label">
+                                <div class="text">Name</div>
+                                <input type="text" class="input" required placeholder="What is your name:">
+                            </label>
+                            <label for="" class="label">
+                                <div class="text">Phone</div>
+                                <input type="tel" class="input" required placeholder="Your phone number:">
+                            </label>
+                            <label for="" class="label">
+                                <div class="text">Email</div>
+                                <input type="email" class="input" required placeholder="Your email:">
+                            </label>
+                            <label for="" class="checkbox">
+                                <input type="checkbox" class="input" checked="checked">
+                                <span class="checkmark"></span>
+                                I agree to the processing of personal data
+                            </label>
+                            <button class="btn">call the measurer</button>
+                        </form>
+                        <div class="saveMoney">
+                            <div class="pig"></div>
+                            <div class="text">Help save 10 - 20% of the <br>
+                                cost of materials</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="fantasies">
-            <div class="container"></div>
+            <div class="container">
+                <div class="fantasies__bg">
+                    <h2 class="fantasies__title">
+                        We realize your
+                        wildest fantasies
+                    </h2>
+                </div>
+            </div>
         </section>
 
         <section class="design">
@@ -293,19 +446,14 @@
     </main>
 
     <footer class="footer">
-
     </footer>
-    <link rel="stylesheet" href="./src/fonts/Futura/stylesheet.css">
-    <link rel="stylesheet" href="./src/libs/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./src/libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./src/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./src/libs/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./src/css/style.css">
 
-    <script src="./src/libs/jquery/jquery.min.js"></script>
-    <script src="./src/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="./src/libs/fancybox/jquery.fancybox.min.js"></script>
-    <script src="./src/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="./src/libs/jquery/js/jquery.min.js"></script>
+    <script src="./src/libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./src/libs/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="./src/libs/mdb-ui-kit/js/mdb.min.js"></script>
+    <script src="./src/js/jquery.inputmask.min.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
 

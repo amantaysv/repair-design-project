@@ -1,0 +1,189 @@
+.request {
+    position: relative;
+    margin-top: 124px;
+    padding: 110px 100px 242px;
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: url(../images/request__bg.png) no-repeat;
+        z-index: -1;
+
+        span {
+            position: absolute;
+            font-size: 18px;
+
+            &:nth-child(odd) {
+                color: #fff;
+                line-height: 25px;
+                font-family: $yo;
+            }
+
+            &:nth-child(even) {
+                color: #363636;
+                line-height: 21px;
+                font-family: $fmc;
+                font-weight: 500;
+            }
+        }
+
+        .item-1 {
+            left: 367px;
+            top: 126px;
+            @include circle;
+        }
+
+        .item-2 {
+            left: 411px;
+            top: 118px;
+        }
+
+        .item-3 {
+            left: 441px;
+            top: 237px;
+            @include circle;
+        }
+
+        .item-4 {
+            left: 488px;
+            top: 240px;
+        }
+
+        .item-5 {
+            left: 466px;
+            top: 398px;
+            @include circle;
+        }
+
+        .item-6 {
+            left: 510px;
+            top: 401px;
+        }
+
+        .item-7 {
+            left: 401px;
+            top: 558px;
+            @include circle;
+        }
+
+        .item-8 {
+            left: 444px;
+            top: 550px;
+        }
+    }
+
+    &__form {
+        position: relative;
+        margin-left: auto;
+        padding: 28px 49px;
+        width: 506px;
+        height: 509px;
+        background: url(../images/request__form-bg.png) center no-repeat;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.93);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .title {
+            text-align: center;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 25px;
+            font-family: $fdc;
+            margin-bottom: 39px;
+        }
+
+        .label {
+            width: 408px;
+            border-bottom: 1px solid #ffffff26;
+            margin: 0 0 48px;
+
+            &:nth-child(4) {
+                margin-bottom: 16px;
+            }
+
+            .text {
+                font-size: 15px;
+                line-height: 20px;
+                color: #ffffff80;
+                font-family: $fbc;
+            }
+
+            .input {
+                width: 100%;
+                border: none;
+                font-size: 18px;
+                color: #fff;
+                line-height: 25px;
+                font-family: $fbc;
+                outline: none;
+                background: none;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        .checkbox {
+            @include checkbox;
+            color: #fff;
+        }
+
+        .btn {
+            @include btn(213px, 51px, 13px, $fdc);
+            margin: 40px 0 0 auto;
+            border-radius: 0;
+        }
+    }
+
+    .saveMoney {
+        position: relative;
+        margin: 50px 0 0 auto;
+        width: 441px;
+        display: flex;
+
+        .pig {
+            position: relative;
+            left: 0;
+            top: 7px;
+            width: 40px;
+            height: 33px;
+            background: url(../images/svg/pig.svg);
+
+            &::before {
+                background: $yellow;
+                content: '';
+                position: absolute;
+                width: 72px;
+                height: 72px;
+                z-index: -1;
+                border-radius: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .text {
+            width: 344px;
+            font-family: $fdc;
+            font-size: 20px;
+            line-height: 25px;
+            color: $yellow;
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.registration {
+    &__bg {
+        background: url(../images/bg_vector.png);
+        padding-top: 305px;
+    }
+
+    &__descr {
+        position: relative;
+        max-width: 682px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $fbc;
+        color: #363636;
+        font-size: 20px;
+        line-height: 34px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 1.5px;
+            background: $yellow;
+            left: 50%;
+            transform: translate(-50%);
+            top: -34px;
+        }
+    }
+
+    &__form {
+        margin: 0 auto;
+        max-width: 769px;
+
+        .row {
+            max-width: 769px;
+            margin: 0 0 33px;
+
+            .label {
+                width: 231px;
+                border-bottom: 1px solid #36363630;
+                margin: 92px auto;
+                padding: 0;
+
+                .text {
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #36363680;
+                    font-family: $fbc;
+                    margin-right: 58px;
+
+                    &:nth-child(2) {
+                        margin-right: 49px;
+                    }
+                }
+
+                .input {
+                    width: 100%;
+                    border: none;
+                    font-size: 18px;
+                    color: #363636;
+                    line-height: 24px;
+                    font-family: $fbc;
+                    outline: none;
+
+                    &::placeholder {
+                        color: #363636;
+                    }
+                }
+            }
+
+            .btn {
+                @include btn(200px, 51px, 15px, $yellow);
+                line-height: 26px;
+                margin-top: 92px;
+            }
+        }
+
+        .checkbox {
+            @include checkbox
+        }
+    }
+}

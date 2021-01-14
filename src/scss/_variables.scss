@@ -1,20 +1,27 @@
 $yellow: #E3B873;
-$fdc: 'FuturaDemiC';
-$fbc: 'FuturaBookC';
-$yo: 'Yeseva One';
+$fdc: 'FuturaDemiC',
+sans-serif;
+$fbc: 'FuturaBookC',
+sans-serif;
+$fmc: 'FuturaMediumC',
+sans-serif;
+$yo: 'Yeseva One',
+serif;
 
 
-@mixin btn($wd, $hg, $fz, $bg) {
+@mixin btn($wd, $hg, $fz, $ff) {
     display: block;
     width: $wd;
     height: $hg;
     line-height: $hg;
     color: #fff;
     font-size: $fz;
-    font-family: $fdc;
-    text-transform: uppercase;
-    background: $bg;
+    font-family: $ff;
+    background: $yellow;
     border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
 
     &:focus {
         outline: none;
@@ -30,5 +37,86 @@ $yo: 'Yeseva One';
 
     &:hover {
         background: none;
+    }
+}
+
+@mixin icon {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 1.5px;
+        background: $yellow;
+        left: calc(50% - 42px);
+        top: 14px;
+        transform: translate(-50%, -50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 1.5px;
+        background: $yellow;
+        right: calc(50% - 42px);
+        top: 14px;
+        transform: translate(50%, -50%);
+    }
+}
+
+@mixin circle {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background: $yellow;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+@mixin checkbox {
+    max-width: 286px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 27px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181818;
+    font-family: $fbc;
+
+    .input {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 1;
+        width: 286px;
+        height: 18px;
+
+        &:checked {
+            ~.checkmark {
+                background: $yellow url(../images/svg/checkbox.svg) center no-repeat;
+            }
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $yellow;
+        border-radius: 2px;
     }
 }
