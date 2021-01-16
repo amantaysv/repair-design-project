@@ -43,6 +43,8 @@ sans-serif;
 
 @mixin icon {
     position: relative;
+    text-align: center;
+    margin-top: 13px;
 
     &::before {
         content: '';

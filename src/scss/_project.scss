@@ -1,5 +1,9 @@
-.types {
-    margin-top: 148px;
+.project {
+    margin-top: 50px;
+    position: relative;
+    padding: 103px 0 0;
+    background: red 500px, #ffffff;
+    z-index: 1;
 
     &__title {
         font-family: $yo;
@@ -12,7 +16,15 @@
 
     &__icon {
         @include icon;
-        margin-bottom: 31px;
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #363636;
+        margin: 24px 0 39px;
+        font-family: $fbc;
     }
 
     .row {
@@ -21,10 +33,11 @@
 
         .col {
 
+
             .card {
                 max-width: 392px;
                 position: relative;
-                min-height: 606px;
+                min-height: 211px;
                 background: transparent;
                 box-shadow: none;
                 margin: 0 auto;
@@ -36,7 +49,7 @@
                     box-shadow: 0 0 10px #00000030;
                     position: relative;
                     left: 50%;
-                    top: -143px;
+                    top: -126px;
                     transform: translate(-50%);
                     text-align: left;
                 }
