@@ -1,7 +1,7 @@
 .fantasies {
     &__bg {
-        padding: 137px 100px 68px;
-        background: url(../images/fantasies/fantasies__bg.webp) center center/cover no-repeat;
+        padding: 117px 100px 96px;
+        background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
         position: relative;
 
         .mask {
@@ -28,6 +28,7 @@
     }
 
     &__caption {
+        margin: 0;
         list-style: none;
         padding-left: 0;
         color: #ffffff;
@@ -40,10 +41,13 @@
 
         &_active {
             span {
-
                 color: $yellow;
                 border-bottom: 1px solid $yellow;
             }
+        }
+
+        &:last-child {
+            margin-bottom: 24px;
         }
 
         &:hover {
@@ -64,12 +68,26 @@
 
                 .wrapper {
                     position: relative;
-                    img {
-                        margin-bottom: 68px;
+
+                    .fancy {
+                        margin-bottom: 30px;
+                        display: block;
+                        &:hover {
+                            cursor: zoom-in;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
 
+
                     &-left {
-                      top: -136px;
+                        top: -110px;
+                    }
+
+                    &-right {
+                        top: -30px;
                     }
                 }
             }

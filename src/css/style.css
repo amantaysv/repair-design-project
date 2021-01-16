@@ -16,6 +16,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 .bg-image {
   overflow: visible;
 }
@@ -1004,8 +1008,8 @@ html:focus-within {
 }
 
 .fantasies__bg {
-  padding: 137px 100px 68px;
-  background: url(../images/fantasies/fantasies__bg.webp) center center/cover no-repeat;
+  padding: 117px 100px 96px;
+  background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
   position: relative;
 }
 
@@ -1034,6 +1038,7 @@ html:focus-within {
 }
 
 .fantasies__caption {
+  margin: 0;
   list-style: none;
   padding-left: 0;
   color: #ffffff;
@@ -1048,6 +1053,10 @@ html:focus-within {
 .fantasies__tab_active span {
   color: #E3B873;
   border-bottom: 1px solid #E3B873;
+}
+
+.fantasies__tab:last-child {
+  margin-bottom: 24px;
 }
 
 .fantasies__tab:hover {
@@ -1066,12 +1075,26 @@ html:focus-within {
   position: relative;
 }
 
-.fantasies__content .row .col .wrapper img {
-  margin-bottom: 68px;
+.fantasies__content .row .col .wrapper .fancy {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.fantasies__content .row .col .wrapper .fancy:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.fantasies__content .row .col .wrapper .fancy:last-child {
+  margin-bottom: 0;
 }
 
 .fantasies__content .row .col .wrapper-left {
-  top: -136px;
+  top: -110px;
+}
+
+.fantasies__content .row .col .wrapper-right {
+  top: -30px;
 }
 
 .fantasies__content_active {
