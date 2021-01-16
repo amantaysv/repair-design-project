@@ -9,6 +9,9 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html:focus-within {
   scroll-behavior: smooth;
 }
 
@@ -226,7 +229,7 @@
 }
 
 .completed-projects__bg {
-  background: url(../images/completed-projects__bg.png) no-repeat;
+  background: url(../images/completed-projects/bg.png) no-repeat;
   padding: 107px 100px 217px;
 }
 
@@ -387,7 +390,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(../images/completed-projects__footer-videoBg.png) left top/cover no-repeat;
+  background: url(../images/completed-projects/footer-videoBg.png) left top/cover no-repeat;
 }
 
 .completed-projects__footer-video-bg .mask {
@@ -403,7 +406,7 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url(../images/svg/completed-projects__footer-video-btn.svg) center -25px/145px;
+  background: url(../images/completed-projects/footer-video-btn.svg) center -25px/145px;
 }
 
 .registration__bg {
@@ -449,6 +452,14 @@
   border-bottom: 1px solid #36363630;
   margin: 92px auto;
   padding: 0;
+}
+
+.registration__form .row .label:focus-within {
+  border-bottom: 1px solid #E3B873;
+}
+
+.registration__form .row .label:focus-within .text {
+  color: #E3B873;
 }
 
 .registration__form .row .label .text {
@@ -839,6 +850,14 @@
   margin: 0 0 48px;
 }
 
+.request__form .label:focus-within {
+  border-bottom: 1px solid #E3B873;
+}
+
+.request__form .label:focus-within .text {
+  color: #E3B873;
+}
+
 .request__form .label:nth-child(4) {
   margin-bottom: 16px;
 }
@@ -982,5 +1001,48 @@
   line-height: 25px;
   color: #E3B873;
   margin-left: auto;
+}
+
+.fantasies__bg {
+  padding: 137px 100px 0;
+  background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
+  position: relative;
+}
+
+.fantasies__bg .mask {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.fantasies .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.fantasies__title {
+  font-size: 27px;
+  font-family: "Yeseva One", serif;
+  color: #E3B873;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.fantasies__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fantasies__tab {
+  width: 490px;
+}
+
+.fantasies__content {
+  display: none;
+}
+
+.fantasies__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

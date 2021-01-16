@@ -40,6 +40,13 @@
                 margin: 92px auto;
                 padding: 0;
 
+                &:focus-within {
+                    border-bottom: 1px solid $yellow;
+                    .text {
+                        color: $yellow;
+                    }
+                }
+
                 .text {
                     font-size: 15px;
                     line-height: 20px;

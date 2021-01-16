@@ -1,0 +1,45 @@
+.fantasies {
+    &__bg {
+        padding: 137px 100px 0;
+        background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
+        position: relative;
+
+        .mask {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 27px;
+        font-family: $yo;
+        color: $yellow;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__caption {}
+
+    &__tab {
+        width: 490px;
+    }
+
+    &__content {
+
+        display: none;
+
+        &_active {
+            display: flex;
+        }
+    }
+
+
+}

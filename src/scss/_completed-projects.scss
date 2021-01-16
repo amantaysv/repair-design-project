@@ -3,7 +3,7 @@
     color: #ffffff;
 
     &__bg {
-        background: url(../images/completed-projects__bg.png) no-repeat;
+        background: url(../images/completed-projects/bg.png) no-repeat;
         padding: 107px 100px 217px;
     }
 
@@ -135,7 +135,7 @@
                 width: 100%;
                 height: 100%;
                 position: relative;
-                background: url(../images/completed-projects__footer-videoBg.png) left top/cover no-repeat;
+                background: url(../images/completed-projects/footer-videoBg.png) left top/cover no-repeat;
 
                 .mask {
                     background: rgba(0, 0, 0, 0.8);
@@ -150,7 +150,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                background: url(../images/svg/completed-projects__footer-video-btn.svg) center -25px/145px;
+                background: url(../images/completed-projects/footer-video-btn.svg) center -25px/145px;
             }
         }
     }
