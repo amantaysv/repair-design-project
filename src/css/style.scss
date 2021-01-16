@@ -4,6 +4,7 @@
 @import url(../libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css);
 @import url(../fonts/Futura/stylesheet.css);
 @import url(../fonts/YesevaOne/stylesheet.css);
+@import url(../fonts/ProximaNova/stylesheet.css);
 
 * {
     padding: 0;
@@ -27,3 +28,6 @@ html:focus-within {
 @import "../scss/types";
 @import "../scss/request";
 @import "../scss/fantasies";
+.design {
+    margin-top: 900px;
+}

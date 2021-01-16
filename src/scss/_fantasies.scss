@@ -1,11 +1,11 @@
 .fantasies {
     &__bg {
-        padding: 137px 100px 0;
-        background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
+        padding: 137px 100px 68px;
+        background: url(../images/fantasies/fantasies__bg.webp) center center/cover no-repeat;
         position: relative;
 
         .mask {
-            background: rgba(0, 0, 0, 0.7);
+            background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
         }
     }
 
@@ -20,26 +20,63 @@
         color: $yellow;
         line-height: 37px;
         text-transform: uppercase;
+        margin-bottom: 47px;
     }
 
     &__tabs {
         display: flex;
     }
 
-    &__caption {}
+    &__caption {
+        list-style: none;
+        padding-left: 0;
+        color: #ffffff;
+        font-family: $pn;
+        font-size: 20px;
+    }
 
     &__tab {
-        width: 490px;
+        margin-bottom: 20px;
+
+        &_active {
+            span {
+
+                color: $yellow;
+                border-bottom: 1px solid $yellow;
+            }
+        }
+
+        &:hover {
+            color: $yellow;
+            cursor: pointer;
+        }
     }
 
     &__content {
-
         display: none;
+        width: calc(100% - 390px);
+        margin: 0;
+        margin-left: auto;
+
+        .row {
+
+            .col {
+
+                .wrapper {
+                    position: relative;
+                    img {
+                        margin-bottom: 68px;
+                    }
+
+                    &-left {
+                      top: -136px;
+                    }
+                }
+            }
+        }
 
         &_active {
             display: flex;
         }
     }
-
-
 }
