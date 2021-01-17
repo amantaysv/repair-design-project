@@ -1,0 +1,123 @@
+.steps {
+    &__bg {
+        padding: 103px 100px 0;
+        background: #131313;
+    }
+
+    .mask {
+        background: url(../images/steps-vector__bg.png);
+    }
+
+    &__tabs {
+        position: relative;
+        z-index: 1;
+    }
+
+    .text {
+        max-width: 337px;
+        width: 100%;
+        margin-right: 68px;
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 18px;
+        font-family: $yo;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: $yellow;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 92px;
+            height: 1px;
+            background: $yellow;
+            bottom: 20px;
+            right: 0;
+        }
+    }
+
+    &__subtitle {
+        font-family: $fdc;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__tab {
+        span {
+            font-size: 15px;
+            font-family: $yo;
+            line-height: 21px;
+        }
+
+        p {
+
+            font-size: 15px;
+            line-height: 18px;
+            font-family: $fbc;
+            margin-bottom: 36px;
+        }
+
+        &_active {
+            color: #fff;
+
+            span {
+                border-bottom: 1px solid $yellow;
+            }
+        }
+
+        &:hover {
+            span {
+                border-bottom: 1px solid $yellow;
+                cursor: pointer;
+            }
+
+            p {
+                cursor: pointer;
+            }
+
+            color: #fff;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: none;
+
+        &_active {
+            display: flex;
+        }
+
+        .about {
+            color: #fff;
+            max-width: 337px;
+            width: 100%;
+            margin-right: 80px;
+
+            &__num {
+                font-size: 18px;
+                line-height: 25px;
+                font-family: $yo;
+            }
+
+            &__title {
+                font-size: 15px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: $yellow;
+                font-family: $yo;
+                margin: 22px 0 16px;
+            }
+
+            &__descr {
+                font-size: 15px;
+                line-height: 25px;
+                font-family: $fbc;
+            }
+        }
+    }
+}

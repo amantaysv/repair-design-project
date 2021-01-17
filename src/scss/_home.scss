@@ -1,13 +1,12 @@
 .home {
     position: relative;
-    background: #131313;
     padding-top: 83px;
 
     &__bg {
         position: relative;
-        width: calc(100% - 82px);
-        padding: 194px 0 206px;
-        background: url(../images/home__bg.png) right top/cover no-repeat;
+        width: calc(100%);
+        padding: 194px 0 206px 82px;
+        background: #131313 url(../images/home__bg.png) right top no-repeat;
         margin-left: auto;
     }
 
@@ -65,25 +64,34 @@
 
     &__link {
         position: absolute;
-        top: calc(50% - 21px);
-        left: -155px;
+        top: 0;
+        left: 0;
         font-family: $fdc;
         color: $yellow;
         text-transform: uppercase;
         line-height: 16px;
-        transform: rotate(90deg) translate(-50%, -50%);
-        z-index: 9999;
+        height: 100%;
+        width: 82px;
+        background: #131313;
 
-        &::before {
-            position: absolute;
-            content: '';
+        p {
+            transform: rotate(90deg) translate(-50%);
+            position: relative;
+            z-index: 1;
             top: 50%;
-            left: calc(100% + 8px);
-            transform: translateY(-50%);
-            height: 1px;
-            width: 41px;
-            background: $yellow;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: calc(100% + 8px);
+                transform: translateY(-50%);
+                height: 1px;
+                width: 41px;
+                background: $yellow;
+            }
         }
+
     }
 
     &__line {

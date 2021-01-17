@@ -2,7 +2,6 @@
     margin-top: 50px;
     position: relative;
     padding: 103px 0 0;
-    background: red 500px, #ffffff;
     z-index: 1;
 
     &__title {
@@ -28,12 +27,10 @@
     }
 
     .row {
-        max-width: 1238px;
+        max-width: 1236px;
         margin: 0 auto;
 
         .col {
-
-
             .card {
                 max-width: 392px;
                 position: relative;

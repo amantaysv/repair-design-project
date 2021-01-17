@@ -1,5 +1,4 @@
 .fantasies {
-  
     &__bg {
         padding: 117px 100px 96px;
         background: url(../images/fantasies/fantasies__bg.png) center center/cover no-repeat;
@@ -64,15 +63,14 @@
         margin-left: auto;
 
         .row {
-
             .col {
-
                 .wrapper {
                     position: relative;
 
                     .fancy {
                         margin-bottom: 30px;
                         display: block;
+
                         &:hover {
                             cursor: zoom-in;
                         }
@@ -81,7 +79,6 @@
                             margin-bottom: 0;
                         }
                     }
-
 
                     &-left {
                         top: -110px;

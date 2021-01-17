@@ -24,11 +24,12 @@ body {
   overflow: visible;
 }
 
-.header {
-  background: #131313;
-}
-
 .header .navbar {
+  max-width: 1416px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -94,15 +95,14 @@ body {
 
 .home {
   position: relative;
-  background: #131313;
   padding-top: 83px;
 }
 
 .home__bg {
   position: relative;
-  width: calc(100% - 82px);
-  padding: 194px 0 206px;
-  background: url(../images/home__bg.png) right top/cover no-repeat;
+  width: calc(100%);
+  padding: 194px 0 206px 82px;
+  background: #131313 url(../images/home__bg.png) right top no-repeat;
   margin-left: auto;
 }
 
@@ -177,18 +177,26 @@ body {
 
 .home__link {
   position: absolute;
-  top: calc(50% - 21px);
-  left: -155px;
+  top: 0;
+  left: 0;
   font-family: "FuturaDemiC", sans-serif;
   color: #E3B873;
   text-transform: uppercase;
   line-height: 16px;
-  -webkit-transform: rotate(90deg) translate(-50%, -50%);
-          transform: rotate(90deg) translate(-50%, -50%);
-  z-index: 9999;
+  height: 100%;
+  width: 82px;
+  background: #131313;
 }
 
-.home__link::before {
+.home__link p {
+  -webkit-transform: rotate(90deg) translate(-50%);
+          transform: rotate(90deg) translate(-50%);
+  position: relative;
+  z-index: 1;
+  top: 50%;
+}
+
+.home__link p::before {
   position: absolute;
   content: '';
   top: 50%;
@@ -229,7 +237,6 @@ body {
 }
 
 .completed-projects {
-  background: linear-gradient(#131313 1074px, #ffffff 0);
   color: #ffffff;
 }
 
@@ -561,7 +568,8 @@ body {
 }
 
 .types {
-  margin-top: 148px;
+  padding-top: 103px;
+  margin-top: 45px;
 }
 
 .types__title {
@@ -1095,7 +1103,6 @@ body {
   margin-top: 50px;
   position: relative;
   padding: 103px 0 0;
-  background: red 500px, #ffffff;
   z-index: 1;
 }
 
@@ -1148,7 +1155,7 @@ body {
 }
 
 .project .row {
-  max-width: 1238px;
+  max-width: 1236px;
   margin: 0 auto;
 }
 
@@ -1215,18 +1222,27 @@ body {
   outline: none;
 }
 
-.measurements__bg {
-  margin-top: -525px;
+.steps__bg {
+  padding: 103px 100px 0;
   background: #131313;
-  padding: 426px 100px 1500px 126px;
 }
 
-.measurements .mask {
-  background: url(../images/measurements-vector__bg.png);
+.steps .mask {
+  background: url(../images/steps-vector__bg.png);
 }
 
-.measurements__title {
-  width: 304px;
+.steps__tabs {
+  position: relative;
+  z-index: 1;
+}
+
+.steps .text {
+  max-width: 337px;
+  width: 100%;
+  margin-right: 68px;
+}
+
+.steps__title {
   position: relative;
   margin-top: 18px;
   font-family: "Yeseva One", serif;
@@ -1236,7 +1252,7 @@ body {
   color: #E3B873;
 }
 
-.measurements__title::before {
+.steps__title::before {
   position: absolute;
   content: '';
   width: 92px;
@@ -1246,28 +1262,84 @@ body {
   right: 0;
 }
 
-.measurements__subtitle {
+.steps__subtitle {
   font-family: "FuturaDemiC", sans-serif;
   font-size: 15px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.measurements__content {
+.steps__tab span {
+  font-size: 15px;
+  font-family: "Yeseva One", serif;
+  line-height: 21px;
+}
+
+.steps__tab p {
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "FuturaBookC", sans-serif;
+  margin-bottom: 36px;
+}
+
+.steps__tab_active {
+  color: #fff;
+}
+
+.steps__tab_active span {
+  border-bottom: 1px solid #E3B873;
+}
+
+.steps__tab:hover {
+  color: #fff;
+}
+
+.steps__tab:hover span {
+  border-bottom: 1px solid #E3B873;
+  cursor: pointer;
+}
+
+.steps__tab:hover p {
+  cursor: pointer;
+}
+
+.steps__content {
   position: relative;
   display: none;
 }
 
-.measurements__content_active {
+.steps__content_active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.measurements .row {
-  padding-top: 103px;
-  position: relative;
-  z-index: 1;
+.steps__content .about {
+  color: #fff;
+  max-width: 337px;
+  width: 100%;
+  margin-right: 80px;
+}
+
+.steps__content .about__num {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Yeseva One", serif;
+}
+
+.steps__content .about__title {
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+  font-family: "Yeseva One", serif;
+  margin: 22px 0 16px;
+}
+
+.steps__content .about__descr {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "FuturaBookC", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

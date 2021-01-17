@@ -1,7 +1,9 @@
 .header {
-    background: #131313;
-
     .navbar {
+        max-width: 1416px;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
         justify-content: center;
         background: #131313;
         padding: 24px 115px 22px 97px;

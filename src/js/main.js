@@ -24,10 +24,10 @@ $('ul.fantasies__caption').on('click', 'li:not(.fantasies__tab_active)', functio
     .closest('div.fantasies__tabs').find('div.fantasies__content').removeClass('fantasies__content_active').eq($(this).index()).addClass('fantasies__content_active');
 });
 
-$('ul.measurements__caption').on('click', 'li:not(.measurements__tab_active)', function () {
+$('div.steps__caption').on('click', 'div:not(.steps__tab_active)', function () {
   $(this)
-    .addClass('measurements__tab_active').siblings().removeClass('measurements__tab_active')
-    .closest('div.measurements__tabs').find('div.measurements__content').removeClass('measurements__content_active').eq($(this).index()).addClass('measurements__content_active');
+    .addClass('steps__tab_active').siblings().removeClass('steps__tab_active')
+    .closest('div.steps__tabs').find('div.steps__content').removeClass('steps__content_active').eq($(this).index()).addClass('steps__content_active');
 });
 
 $('[data-mdb-spy="scroll"]').each(function () {
