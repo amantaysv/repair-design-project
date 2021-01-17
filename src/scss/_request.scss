@@ -1,27 +1,23 @@
 .request {
-    position: relative;
-    padding: 110px 100px 135px;
+    padding: 110px 100px 135px 0;
+
+    display: flex;
+    flex-wrap: wrap;
 
     &__bg {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
-        height: 100%;
-        background: url(../images/request__bg.png) no-repeat;
-        z-index: -1;
-
+        position: relative;
         span {
             position: absolute;
             font-size: 18px;
+            z-index: 1;
 
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 color: #fff;
                 line-height: 25px;
                 font-family: $yo;
             }
 
-            &:nth-child(even) {
+            &:nth-child(odd) {
                 color: #363636;
                 line-height: 21px;
                 font-family: $fmc;
@@ -30,46 +26,47 @@
         }
 
         .item-1 {
-            left: 367px;
-            top: 126px;
+            left: 367px; 
+            top: 125px; 
             @include circle;
         }
 
         .item-2 {
-            left: 411px;
-            top: 118px;
+            width: 364px;
+            left: 411px; 
+            top: 118px; 
         }
 
         .item-3 {
             left: 441px;
-            top: 237px;
+            top: 236px; 
             @include circle;
         }
 
         .item-4 {
-            left: 488px;
-            top: 240px;
+            left: 485px; 
+            top: 238px; 
         }
 
         .item-5 {
-            left: 466px;
-            top: 398px;
+            left: 466px; 
+            top: 397px; 
             @include circle;
         }
 
         .item-6 {
-            left: 510px;
-            top: 401px;
+            left: 510px; 
+            top: 400px;
         }
 
         .item-7 {
             left: 401px;
-            top: 558px;
+            top: 557px;
             @include circle;
         }
 
         .item-8 {
-            left: 444px;
+            left: 445px;
             top: 550px;
         }
     }
@@ -78,9 +75,8 @@
         position: relative;
         margin-left: auto;
         padding: 28px 49px;
-        width: 506px;
-        height: 509px;
-        background: url(../images/request__form-bg.png) center no-repeat;
+        max-width: 506px;
+        width: 100%;
         display: flex;
         flex-direction: column;
 
@@ -105,7 +101,7 @@
         }
 
         .label {
-            width: 408px;
+            max-width: 408px;
             border-bottom: 1px solid #ffffff26;
             margin: 0 0 48px;
 

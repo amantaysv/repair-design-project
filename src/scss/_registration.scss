@@ -1,29 +1,6 @@
 .registration {
     &__bg {
         background: url(../images/bg_vector.png);
-        padding-top: 305px;
-    }
-
-    &__descr {
-        position: relative;
-        max-width: 682px;
-        margin: 0 auto;
-        text-align: center;
-        font-family: $fbc;
-        color: #363636;
-        font-size: 20px;
-        line-height: 34px;
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 55px;
-            height: 1.5px;
-            background: $yellow;
-            left: 50%;
-            transform: translate(-50%);
-            top: -34px;
-        }
     }
 
     &__form {
@@ -32,16 +9,16 @@
 
         .row {
             max-width: 769px;
-            margin: 0 0 33px;
 
             .label {
                 width: 231px;
                 border-bottom: 1px solid #36363630;
-                margin: 92px auto;
+                margin: 92px auto 0;
                 padding: 0;
 
                 &:focus-within {
                     border-bottom: 1px solid $yellow;
+
                     .text {
                         color: $yellow;
                     }
@@ -77,12 +54,13 @@
             .btn {
                 @include btn(200px, 51px, 15px, $yellow);
                 line-height: 26px;
-                margin-top: 92px;
+                margin: 92px auto 0;
             }
         }
 
         .checkbox {
-            @include checkbox
+            @include checkbox;
+            margin-top: 33px;
         }
     }
 }

@@ -229,13 +229,13 @@ body {
 }
 
 .completed-projects {
-  background: #131313;
+  background: linear-gradient(#131313 1074px, #ffffff 0);
   color: #ffffff;
 }
 
 .completed-projects__bg {
-  background: url(../images/completed-projects/bg.png) no-repeat;
-  padding: 107px 100px 217px;
+  background: #ffffff url(../images/completed-projects/bg.png) no-repeat;
+  padding: 107px 100px 0;
 }
 
 .completed-projects__caption {
@@ -341,23 +341,25 @@ body {
   position: static;
 }
 
-.completed-projects__footer {
+.online-control {
+  margin-top: 90px;
+}
+
+.online-control__title {
   text-transform: uppercase;
   font-family: "Yeseva One", serif;
   text-align: center;
   font-size: 20px;
   line-height: 28px;
-  margin-top: 90px;
 }
 
-.completed-projects__footer-icon {
-  margin: 12px auto 31px;
+.online-control__icon {
   position: relative;
   text-align: center;
   margin-top: 13px;
 }
 
-.completed-projects__footer-icon::before {
+.online-control__icon::before {
   content: '';
   position: absolute;
   width: 32px;
@@ -369,7 +371,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.completed-projects__footer-icon::after {
+.online-control__icon::after {
   content: '';
   position: absolute;
   width: 32px;
@@ -381,29 +383,16 @@ body {
           transform: translate(50%, -50%);
 }
 
-.completed-projects__footer-video {
-  position: absolute;
+.online-control__video-bg {
+  margin: 30px auto 0;
   max-width: 817px;
-  max-height: 434px;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
 }
 
-.completed-projects__footer-video-bg {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: url(../images/completed-projects/footer-videoBg.png) left top/cover no-repeat;
-}
-
-.completed-projects__footer-video-bg .mask {
+.online-control__video-bg .mask {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.completed-projects__footer-video-btn {
+.online-control__video-btn {
   border-radius: 50%;
   height: 85px;
   width: 85px;
@@ -412,15 +401,10 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url(../images/completed-projects/footer-video-btn.svg) center -25px/145px;
+  background: url(../images/online-control/video-btn.svg) center -25px/145px;
 }
 
-.registration__bg {
-  background: url(../images/bg_vector.png);
-  padding-top: 305px;
-}
-
-.registration__descr {
+.online-control__descr {
   position: relative;
   max-width: 682px;
   margin: 0 auto;
@@ -429,9 +413,10 @@ body {
   color: #363636;
   font-size: 20px;
   line-height: 34px;
+  margin-top: 100px;
 }
 
-.registration__descr::before {
+.online-control__descr::before {
   content: '';
   position: absolute;
   width: 55px;
@@ -443,6 +428,10 @@ body {
   top: -34px;
 }
 
+.registration__bg {
+  background: url(../images/bg_vector.png);
+}
+
 .registration__form {
   margin: 0 auto;
   max-width: 769px;
@@ -450,13 +439,12 @@ body {
 
 .registration__form .row {
   max-width: 769px;
-  margin: 0 0 33px;
 }
 
 .registration__form .row .label {
   width: 231px;
   border-bottom: 1px solid #36363630;
-  margin: 92px auto;
+  margin: 92px auto 0;
   padding: 0;
 }
 
@@ -520,7 +508,7 @@ body {
   text-align: center;
   margin: 0;
   line-height: 26px;
-  margin-top: 92px;
+  margin: 92px auto 0;
 }
 
 .registration__form .row .btn:focus {
@@ -546,6 +534,7 @@ body {
   line-height: 22px;
   color: #181818;
   font-family: "FuturaBookC", sans-serif;
+  margin-top: 33px;
 }
 
 .registration__form .checkbox .input {
@@ -616,14 +605,13 @@ body {
 }
 
 .types .row {
-  max-width: 1238px;
+  max-width: 1236px;
   margin: 0 auto;
 }
 
 .types .row .col .card {
   max-width: 392px;
   position: relative;
-  min-height: 606px;
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -633,12 +621,13 @@ body {
 .types .row .col .card-body {
   padding: 25px 2rem;
   width: 80%;
+  height: 274px;
   background: #fff;
   -webkit-box-shadow: 0 0 10px #00000030;
           box-shadow: 0 0 10px #00000030;
   position: relative;
   left: 50%;
-  top: -143px;
+  top: -137px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   text-align: left;
@@ -684,32 +673,31 @@ body {
 }
 
 .request {
-  position: relative;
-  padding: 110px 100px 135px;
+  padding: 110px 100px 135px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .request__bg {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background: url(../images/request__bg.png) no-repeat;
-  z-index: -1;
+  position: relative;
 }
 
 .request__bg span {
   position: absolute;
   font-size: 18px;
+  z-index: 1;
 }
 
-.request__bg span:nth-child(odd) {
+.request__bg span:nth-child(even) {
   color: #fff;
   line-height: 25px;
   font-family: "Yeseva One", serif;
 }
 
-.request__bg span:nth-child(even) {
+.request__bg span:nth-child(odd) {
   color: #363636;
   line-height: 21px;
   font-family: "FuturaMediumC", sans-serif;
@@ -718,7 +706,7 @@ body {
 
 .request__bg .item-1 {
   left: 367px;
-  top: 126px;
+  top: 125px;
 }
 
 .request__bg .item-1::before {
@@ -736,13 +724,14 @@ body {
 }
 
 .request__bg .item-2 {
+  width: 364px;
   left: 411px;
   top: 118px;
 }
 
 .request__bg .item-3 {
   left: 441px;
-  top: 237px;
+  top: 236px;
 }
 
 .request__bg .item-3::before {
@@ -760,13 +749,13 @@ body {
 }
 
 .request__bg .item-4 {
-  left: 488px;
-  top: 240px;
+  left: 485px;
+  top: 238px;
 }
 
 .request__bg .item-5 {
   left: 466px;
-  top: 398px;
+  top: 397px;
 }
 
 .request__bg .item-5::before {
@@ -785,12 +774,12 @@ body {
 
 .request__bg .item-6 {
   left: 510px;
-  top: 401px;
+  top: 400px;
 }
 
 .request__bg .item-7 {
   left: 401px;
-  top: 558px;
+  top: 557px;
 }
 
 .request__bg .item-7::before {
@@ -808,7 +797,7 @@ body {
 }
 
 .request__bg .item-8 {
-  left: 444px;
+  left: 445px;
   top: 550px;
 }
 
@@ -816,9 +805,8 @@ body {
   position: relative;
   margin-left: auto;
   padding: 28px 49px;
-  width: 506px;
-  height: 509px;
-  background: url(../images/request__form-bg.png) center no-repeat;
+  max-width: 506px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,7 +837,7 @@ body {
 }
 
 .request__form .label {
-  width: 408px;
+  max-width: 408px;
   border-bottom: 1px solid #ffffff26;
   margin: 0 0 48px;
 }

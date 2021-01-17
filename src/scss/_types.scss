@@ -16,7 +16,7 @@
     }
 
     .row {
-        max-width: 1238px;
+        max-width: 1236px;
         margin: 0 auto;
 
         .col {
@@ -24,7 +24,6 @@
             .card {
                 max-width: 392px;
                 position: relative;
-                min-height: 606px;
                 background: transparent;
                 box-shadow: none;
                 margin: 0 auto;
@@ -32,11 +31,12 @@
                 &-body {
                     padding: 25px 2rem;
                     width: 80%;
+                    height: 274px;
                     background: #fff;
                     box-shadow: 0 0 10px #00000030;
                     position: relative;
                     left: 50%;
-                    top: -143px;
+                    top: -137px;
                     transform: translate(-50%);
                     text-align: left;
                 }
