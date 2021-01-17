@@ -1,0 +1,106 @@
+.team {
+    padding-top: 103px;
+
+    &__title {
+        font-family: $yo;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__icon {
+        @include icon;
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        margin: 24px 0 70px;
+        font-family: $fbc;
+    }
+
+    .row {
+        max-width: 1064px;
+        margin: 0 auto;
+
+        .col {
+            .card {
+                max-width: 272px;
+                position: relative;
+                // min-height: 211px;
+                background: transparent;
+                box-shadow: none;
+                margin: 0 auto;
+
+                &-icon {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 70px;
+                        height: 70px;
+                        z-index: -1;
+                        background: $yellow;
+                    }
+                }
+
+                &-body {
+                    padding: 22px 0 24px;
+                    width: 90%;
+                    min-height: 138px;
+                    background: #fff;
+                    box-shadow: 0 0 10px #00000030;
+                    position: relative;
+                    left: 50%;
+                    top: -69px;
+                    transform: translate(-50%);
+                    text-align: left;
+                }
+
+                &-title {
+                    color: #181818;
+                    font-family: $yo;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                &-text {
+                    color: #959595;
+                    font-family: $fbc;
+                    font-size: 18px;
+                    line-height: 26px;
+                    text-align: center;
+                    padding: 0;
+                }
+
+                .btn {
+                    @include btn (100%, 44px, 13px, $yo);
+
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

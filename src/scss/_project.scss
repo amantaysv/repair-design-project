@@ -1,8 +1,18 @@
 .project {
     margin-top: 50px;
     position: relative;
-    padding: 103px 0 0;
+    padding-top: 103px;
     z-index: 1;
+
+    &__bg {
+        padding: 103px 100px 0;
+        background: #131313;
+    }
+
+    .mask {
+        top: -100px;
+        background: url(../images/steps-vector__bg.png) no-repeat;
+    }
 
     &__title {
         font-family: $yo;
