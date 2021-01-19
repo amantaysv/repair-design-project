@@ -1,10 +1,6 @@
 .completed-projects {
     color: #ffffff;
-
-    &__bg {
-        background: #ffffff url(../images/completed-projects/bg.png) no-repeat;
-        padding: 107px 100px 0;
-    }
+    padding: 107px 100px 0;    
 
     &__caption {
         display: flex;

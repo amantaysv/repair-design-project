@@ -9,49 +9,46 @@
 </head>
 
 <body data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="0">
-    <header class="header">
-        <div class="container">
-            <nav id="scrollspy" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">890</span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav smooth-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#measurements">measurements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">contacts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn">request a call</button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <header class="header fixed-top">
+        <nav id="scrollspy" class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+            <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">890</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav smooth-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#measurements">measurements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn">request a call</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <main>
-        <section class="home" id="home">
-            <div class="container">
+    <div class="container">
+        <main>
+            <section class="home" id="home">
                 <div class="home__bg bg-image">
                     <div class="mask"></div>
                     <div class="wrapper">
@@ -73,12 +70,9 @@
                     <div>Scroll down</div>
                     <a href="#projects"><img src="./src/images/svg/scroll-down.svg" alt="scroll-down"></a>
                 </div>
-            </div>
-        </section>
-
-        <section class="completed-projects" id="projects">
-            <div class="container">
-                <div class="completed-projects__bg">
+            </section>
+            <div class="vector-bg__first">
+                <section class="completed-projects" id="projects">
                     <div class="completed-projects__tabs">
                         <ul class="completed-projects__caption">
                             <li class="completed-projects__tab completed-projects__tab_active">
@@ -254,35 +248,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="online-control">
-                        <h2 class="online-control__title">online control</h2>
-                        <div class="online-control__icon">
-                            <img src="./src/images/svg/online-control__icon.svg" alt="">
-                        </div>
-                        <div class="online-control__video-bg bg-image">
-                            <img src="./src/images/online-control/video-bg.png" alt="" class="img-fluid">
-                            <div class="mask"></div>
-                            <a data-fancybox href="https:/provence/www.youtube.com/watch?v=5qap5aO4i9A"
-                                data-width="1100" data-height="620">
-                                <span class="online-control__video-btn"></span>
-                            </a>
-                        </div>
-                        <div class="online-control__descr">
-                            At each facility, a camera is installed that broadcasts the progress of work on the clock
-                            <br>
-                            At any time, you can go to our website and monitor the progress of work in your <br>
-                            apartment.
-                            You can watch the live broadcast from one of our facilities! <br>
-                            Leave a request below and you will receive a link to the broadcast.
-                        </div>
+                </section>
+                <section class="online-control">
+                    <h2 class="online-control__title">online control</h2>
+                    <div class="online-control__icon">
+                        <img src="./src/images/svg/online-control__icon.svg" alt="">
                     </div>
-                </div>
+                    <div class="online-control__video-bg bg-image">
+                        <img src="./src/images/online-control/video-bg.png" alt="" class="img-fluid">
+                        <div class="mask"></div>
+                        <a data-fancybox href="https:/provence/www.youtube.com/watch?v=5qap5aO4i9A" data-width="1100"
+                            data-height="620">
+                            <span class="online-control__video-btn"></span>
+                        </a>
+                    </div>
+                    <div class="online-control__descr">
+                        At each facility, a camera is installed that broadcasts the progress of work on the clock
+                        <br>
+                        At any time, you can go to our website and monitor the progress of work in your <br>
+                        apartment.
+                        You can watch the live broadcast from one of our facilities! <br>
+                        Leave a request below and you will receive a link to the broadcast.
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <section class="registration">
-            <div class="container">
-                <div class="registration__bg">
+            <div class="vector-bg__second">
+                <section class="registration">
                     <form class="registration__form">
                         <div class="row">
                             <label for="" class="label">
@@ -301,121 +293,120 @@
                             <span class="checkmark"></span>
                         </label>
                     </form>
-                    <div class="types" id="measurements">
-                        <h2 class="types__title">types of repair</h2>
-                        <div class="types__icon">
-                            <img src="./src/images/svg/types__icon.svg" alt="">
-                        </div>
-                        <div class="row">
-                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/types-of-repair/card-image1.png" class="card-img-top"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <h4 class="card-title">Redecorating</h4>
-                                        <ul class="card-text">
-                                            <li> Dismantling of old coatings</li>
-                                            <li> Wallpapering</li>
-                                            <li> Painting walls and ceilings</li>
-                                            <li> Laying flooring</li>
-                                            <li> Replacing plumbing</li>
-                                            <li> Replacing sockets and switches</li>
-                                            <li> Replacing doors</li>
-                                        </ul>
-                                        <button class="btn">150 rub / m2</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/types-of-repair/card-image2.png" class="card-img-top"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <h4 class="card-title">Overhaul</h4>
-                                        <ul class="card-text">
-                                            <li> Dismantling of old coatings</li>
-                                            <li> Wallpapering</li>
-                                            <li> Painting walls and ceilings</li>
-                                            <li> Laying flooring</li>
-                                            <li> Replacing plumbing</li>
-                                            <li> Replacing sockets and switches</li>
-                                            <li> Replacing doors</li>
-                                        </ul>
-                                        <button class="btn">400 rub / m2</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/types-of-repair/card-image3.png" class="card-img-top"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <h4 class="card-title">Designer Repair</h4>
-                                        <ul class="card-text">
-                                            <li> Dismantling of old coatings</li>
-                                            <li> Wallpapering</li>
-                                            <li> Painting walls and ceilings</li>
-                                            <li> Laying flooring</li>
-                                            <li> Replacing plumbing</li>
-                                            <li> Replacing sockets and switches</li>
-                                            <li> Replacing doors</li>
-                                        </ul>
-                                        <button class="btn">900 rub / m2</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request">
-                        <div class="request__bg">
-                            <img src="./src/images/request__bg.png" alt="" class="img-fluid">
-                            <span class="item-1">01</span>
-                            <span class="item-2">Our specialist will arrive for measurements per day <br>
-                                contact, or appoint a date convenient for you</span>
-                            <span class="item-3">02</span>
-                            <span class="item-4">Free metering</span>
-                            <span class="item-5">03</span>
-                            <span class="item-6">Free consultation</span>
-                            <span class="item-7">04</span>
-                            <span class="item-8">Get a cost estimate and <br>
-                                the timing of your future repairs</span>
-                        </div>
-                        <form class="request__form">
-                            <div class="title">Leave a request for free <br>
-                                departure of the measurer
-                            </div>
-                            <label for="" class="label">
-                                <div class="text">Name</div>
-                                <input type="text" class="input" required placeholder="What is your name:">
-                            </label>
-                            <label for="" class="label">
-                                <div class="text">Phone</div>
-                                <input type="tel" class="input" required placeholder="Your phone number:">
-                            </label>
-                            <label for="" class="label">
-                                <div class="text">Email</div>
-                                <input type="email" class="input" required placeholder="Your email:">
-                            </label>
-                            <label for="" class="checkbox">
-                                <input type="checkbox" class="input" checked="checked">
-                                <span class="checkmark"></span>
-                                I agree to the processing of personal data
-                            </label>
-                            <button class="btn">call the measurer</button>
-                        </form>
-                        <div class="saveMoney">
-                            <div class="pig"></div>
-                            <div class="text">Help save 10 - 20% of the <br>
-                                cost of materials</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+                </section>
 
-        <section class="fantasies">
-            <div class="container">
+                <section class="types" id="measurements">
+                    <h2 class="types__title">types of repair</h2>
+                    <div class="types__icon">
+                        <img src="./src/images/svg/types__icon.svg" alt="">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/types-of-repair/card-image1.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Redecorating</h4>
+                                    <ul class="card-text">
+                                        <li> Dismantling of old coatings</li>
+                                        <li> Wallpapering</li>
+                                        <li> Painting walls and ceilings</li>
+                                        <li> Laying flooring</li>
+                                        <li> Replacing plumbing</li>
+                                        <li> Replacing sockets and switches</li>
+                                        <li> Replacing doors</li>
+                                    </ul>
+                                    <button class="btn">150 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/types-of-repair/card-image2.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Overhaul</h4>
+                                    <ul class="card-text">
+                                        <li> Dismantling of old coatings</li>
+                                        <li> Wallpapering</li>
+                                        <li> Painting walls and ceilings</li>
+                                        <li> Laying flooring</li>
+                                        <li> Replacing plumbing</li>
+                                        <li> Replacing sockets and switches</li>
+                                        <li> Replacing doors</li>
+                                    </ul>
+                                    <button class="btn">400 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/types-of-repair/card-image3.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Designer Repair</h4>
+                                    <ul class="card-text">
+                                        <li> Dismantling of old coatings</li>
+                                        <li> Wallpapering</li>
+                                        <li> Painting walls and ceilings</li>
+                                        <li> Laying flooring</li>
+                                        <li> Replacing plumbing</li>
+                                        <li> Replacing sockets and switches</li>
+                                        <li> Replacing doors</li>
+                                    </ul>
+                                    <button class="btn">900 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="request">
+                    <div class="request__bg">
+                        <img src="./src/images/request__bg.png" alt="" class="img-fluid">
+                        <span class="item-1">01</span>
+                        <span class="item-2">Our specialist will arrive for measurements per day <br>
+                            contact, or appoint a date convenient for you</span>
+                        <span class="item-3">02</span>
+                        <span class="item-4">Free metering</span>
+                        <span class="item-5">03</span>
+                        <span class="item-6">Free consultation</span>
+                        <span class="item-7">04</span>
+                        <span class="item-8">Get a cost estimate and <br>
+                            the timing of your future repairs</span>
+                    </div>
+                    <form class="request__form bg-image">
+                        <div class="mask"></div>
+                        <div class="title">Leave a request for free <br>
+                            departure of the measurer
+                        </div>
+                        <label for="" class="label">
+                            <div class="text">Name</div>
+                            <input type="text" class="input" required placeholder="What is your name:">
+                        </label>
+                        <label for="" class="label">
+                            <div class="text">Phone</div>
+                            <input type="tel" class="input" required placeholder="Your phone number:">
+                        </label>
+                        <label for="" class="label">
+                            <div class="text">Email</div>
+                            <input type="email" class="input" required placeholder="Your email:">
+                        </label>
+                        <label for="" class="checkbox">
+                            <input type="checkbox" class="input" checked="checked">
+                            <span class="checkmark"></span>
+                            I agree to the processing of personal data
+                        </label>
+                        <button class="btn">call the measurer</button>
+                    </form>
+                    <div class="saveMoney">
+                        <div class="pig">
+                            <img src="./src/images/svg/pig.svg" alt="">
+                        </div>
+                        <div class="text">Help save 10 - 20% of the <br>
+                            cost of materials</div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="fantasies">
                 <div class="fantasies__bg bg-image">
                     <div class="mask"></div>
                     <div class="wrapper">
@@ -826,291 +817,375 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="vector-bg__third bg-image">
+                <div class="mask"></div>
+                <section class="project">
+                    <h2 class="project__title">design project</h2>
+                    <div class="project__icon">
+                        <img src="./src/images/svg/design__icon.svg" alt="">
+                    </div>
+                    <div class="project__descr">
+                        Design project not only helps to make the repair of your apartment more modern, <br>
+                        but also significantly reduces the cost of materials and reduces the time of repair
+                        work.
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/project/card-image1.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Mini</h4>
+                                    <ul class="card-text">
+                                        <li>Measurement drawing</li>
+                                        <li>Redevelopment</li>
+                                        <li>Layout of furniture</li>
+                                        <li>Plumbing plan. equipment</li>
+                                    </ul>
+                                    <button class="btn">from 900 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/project/card-image2.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Overhaul</h4>
+                                    <ul class="card-text">
+                                        <li>Measurement drawing</li>
+                                        <li>Redevelopment</li>
+                                        <li>Layout of furniture</li>
+                                        <li>Plan of ceilings</li>
+                                        <li>Floor Plan</li>
+                                        <li>Electricians plan</li>
+                                        <li>Lighting plan</li>
+                                    </ul>
+                                    <button class="btn">from 1800 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/project/card-image3.png" class="card-img-top" alt="" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Designer Repair</h4>
+                                    <ul class="card-text">
+                                        <li>Measurement drawing</li>
+                                        <li>Redevelopment</li>
+                                        <li>Layout of furniture</li>
+                                        <li>Plan of ceilings</li>
+                                        <li>Floor Plan</li>
+                                        <li>Electricians plan</li>
+                                        <li>Lighting plan</li>
+                                        <li>Wall reamers</li>
+                                        <li>3D visualization</li>
+                                        <li>Bill of materials</li>
+                                        <li>Departure for a selection of materials</li>
+                                        <li>Furniture selection</li>
+                                    </ul>
+                                    <button class="btn">from 4000 rub / m2</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="steps" id="steps">
+                    <div class="row steps__tabs">
+                        <div class="col text">
+                            <h3 class="steps__subtitle">How we are working</h3>
+                            <h2 class="steps__title">6 steps to <br>
+                                the goal</h2>
+                        </div>
+                        <div class="col row steps__caption">
+                            <div class="col-4 steps__tab steps__tab_active">
+                                <span>01</span>
+                                <p>Departure to <br>
+                                    room measurements</p>
+                            </div>
+                            <div class="col-4 steps__tab">
+                                <span>02</span>
+                                <p>Compilation
+                                    estimates</p>
+                            </div>
+                            <div class="col-4 steps__tab">
+                                <span>03</span>
+                                <p>Development
+                                    project design</p>
+                            </div>
+                            <div class="col-4 steps__tab">
+                                <span>04</span>
+                                <p>Purchasing Supplies</p>
+                            </div>
+                            <div class="col-4 steps__tab">
+                                <span>05</span>
+                                <p>Repair finishing work</p>
+                            </div>
+                            <div class="col-4 steps__tab">
+                                <span>06</span>
+                                <p>Acceptance of repair work</p>
+                            </div>
+                        </div>
+                        <div class="steps__content steps__content_active">
+                            <div class="about">
+                                <div class="about__num">1/6</div>
+                                <h3 class="about__title">Departure for
+                                    measurements premises</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="steps__content">
+                            <div class="about">
+                                <div class="about__num">2/6</div>
+                                <h3 class="about__title">Compilation
+                                    estimates</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="steps__content">
+                            <div class="about">
+                                <div class="about__num">3/6</div>
+                                <h3 class="about__title">Development
+                                    project design</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="steps__content">
+                            <div class="about">
+                                <div class="about__num">4/6</div>
+                                <h3 class="about__title">Purchasing Supplies</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="steps__content">
+                            <div class="about">
+                                <div class="about__num">5/6</div>
+                                <h3 class="about__title">Repair finishing work</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="steps__content">
+                            <div class="about">
+                                <div class="about__num">6/6</div>
+                                <h3 class="about__title">Acceptance of repair work</h3>
+                                <h4 class="about__descr">After your call, we go to you to consult and measure
+                                    the
+                                    premises
+                                    of your apartment. During our meeting, you can ask absolutely any number of
+                                    questions. An appraiser-appraiser leaves to measure the room.
+                                    He will advise you on the issues of repair technology, apartment design,
+                                    terms
+                                    of repair of the apartment as a whole and its individual stages.</h4>
+                            </div>
+                            <div>
+                                <img src="./src/images/steps-img.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team" id="team">
+                    <h2 class="team__title">our team</h2>
+                    <div class="team__icon">
+                        <img src="./src/images/svg/team__icon.svg" alt="">
+                    </div>
+                    <div class="team__subtitle">Our team has helped to become happier for more than
+                        500 families and we are not going to stop</div>
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/team/card-image1.png" class="card-img-top" alt="" />
+                                <div class="card-icon">
+                                    <img src="./src/images/team/idea.svg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Dmitry tulyakov</h4>
+                                    <p class="card-text">Project manager</p>
+                                    <button class="btn">Work experience 8 years</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/team/card-image2.png" class="card-img-top" alt="" />
+                                <div class="card-icon">
+                                    <img src="./src/images/team/lamp.svg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Larisa Kotlyarova</h4>
+                                    <p class="card-text">Designer</p>
+                                    <button class="btn">Work experience 6 years</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <img src="./src/images/team/card-image3.png" class="card-img-top" alt="" />
+                                <div class="card-icon">
+                                    <img src="./src/images/team/portfolio.svg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Alexey Efimov</h4>
+                                    <p class="card-text">Foreman</p>
+                                    <button class="btn">Work experience 12 years</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__descr">Each employee of our company is a qualified full-time specialist
+                        <br>
+                        with work experience of 6 years. <br>
+                        We do not have laborers and guest workers, each employee carries out <br>
+                        work corresponding to his specialty.
+                    </div>
+                </section>
             </div>
-        </section>
 
-        <section class="project">
-            <div class="container">
-                <h2 class="project__title">design project</h2>
-                <div class="project__icon">
-                    <img src="./src/images/svg/design__icon.svg" alt="">
+            <section class="reviews" id="reviews">
+                <h2 class="reviews__title">our clients</h2>
+                <div class="reviews__icon">
+                    <img src="./src/images/svg/reviews__icon.svg" alt="">
                 </div>
-                <div class="project__descr">
-                    Design project not only helps to make the repair of your apartment more modern, <br>
-                    but also significantly reduces the cost of materials and reduces the time of repair work.
-                </div>
-                <div class="row">
-                    <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="reviews__subtitle">80% of our customers recommend us to their <br>
+                    friends and family.</div>
+                <div class="row justify-content-center">
+                    <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="card">
-                            <img src="./src/images/project/card-image1.png" class="card-img-top" alt="" />
+                            <div class="card-header">
+                                <img src="./src/images/reviews/card-image1.png" class="card-img" alt="">
+                                <h5 class="card-title">Fedosova Maria <br>
+                                    Konstantinovna</h5>
+                            </div>
                             <div class="card-body">
-                                <h4 class="card-title">Mini</h4>
-                                <ul class="card-text">
-                                    <li>Measurement drawing</li>
-                                    <li>Redevelopment</li>
-                                    <li>Layout of furniture</li>
-                                    <li>Plumbing plan. equipment</li>
-                                </ul>
-                                <button class="btn">from 900 rub / m2</button>
+                                <h6 class="card-subtitle">
+                                    I want to thank the guys for their work. We put your shower part in repair. I am
+                                    very grateful that I referred to the repair as to my own. Great thanks I express the
+                                    project to georgia for its professionalism and approach. <br> The repair process was
+                                    turned out in terms, faster than anticipated. Team mobile and professional. Works
+                                    performed qualitatively without comments. Quality satisfied. Prices democratic. I
+                                    recommend these masters.
+                                </h6>
+                                <button class="btn">
+                                    <img src="./src/images/1.svg" alt="">
+                                    <span>40 m2</span>
+                                    <span class="line"></span>
+                                    <img src="./src/images/2.svg" alt="">
+                                    <span>48 days</span>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="card">
-                            <img src="./src/images/project/card-image2.png" class="card-img-top" alt="" />
+                            <div class="card-header">
+                                <img src="./src/images/reviews/card-image1.png" class="card-img" alt="">
+                                <h5 class="card-title">Fedosova Maria <br>
+                                    Konstantinovna</h5>
+                            </div>
                             <div class="card-body">
-                                <h4 class="card-title">Overhaul</h4>
-                                <ul class="card-text">
-                                    <li>Measurement drawing</li>
-                                    <li>Redevelopment</li>
-                                    <li>Layout of furniture</li>
-                                    <li>Plan of ceilings</li>
-                                    <li>Floor Plan</li>
-                                    <li>Electricians plan</li>
-                                    <li>Lighting plan</li>
-                                </ul>
-                                <button class="btn">from 1800 rub / m2</button>
+                                <h6 class="card-subtitle">
+                                    I want to thank the guys for their work. We put your shower part in repair. I am
+                                    very grateful that I referred to the repair as to my own. Great thanks I express the
+                                    project to georgia for its professionalism and approach. <br> The repair process was
+                                    turned out in terms, faster than anticipated. Team mobile and professional. Works
+                                    performed qualitatively without comments. Quality satisfied. Prices democratic. I
+                                    recommend these masters.
+                                </h6>
+                                <button class="btn">
+                                    <img src="./src/images/1.svg" alt="">
+                                    <span>40 m2</span>
+                                    <span class="line"></span>
+                                    <img src="./src/images/2.svg" alt="">
+                                    <span>48 days</span>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="card">
-                            <img src="./src/images/project/card-image3.png" class="card-img-top" alt="" />
+                            <div class="card-header">
+                                <img src="./src/images/reviews/card-image1.png" class="card-img" alt="">
+                                <h5 class="card-title">Fedosova Maria <br>
+                                    Konstantinovna</h5>
+                            </div>
                             <div class="card-body">
-                                <h4 class="card-title">Designer Repair</h4>
-                                <ul class="card-text">
-                                    <li>Measurement drawing</li>
-                                    <li>Redevelopment</li>
-                                    <li>Layout of furniture</li>
-                                    <li>Plan of ceilings</li>
-                                    <li>Floor Plan</li>
-                                    <li>Electricians plan</li>
-                                    <li>Lighting plan</li>
-                                    <li>Wall reamers</li>
-                                    <li>3D visualization</li>
-                                    <li>Bill of materials</li>
-                                    <li>Departure for a selection of materials</li>
-                                    <li>Furniture selection</li>
-                                </ul>
-                                <button class="btn">from 4000 rub / m2</button>
+                                <h6 class="card-subtitle">
+                                    I want to thank the guys for their work. We put your shower part in repair. I am
+                                    very grateful that I referred to the repair as to my own. Great thanks I express the
+                                    project to georgia for its professionalism and approach. <br> The repair process was
+                                    turned out in terms, faster than anticipated. Team mobile and professional. Works
+                                    performed qualitatively without comments. Quality satisfied. Prices democratic. I
+                                    recommend these masters.
+                                </h6>
+                                <button class="btn">
+                                    <img src="./src/images/1.svg" alt="">
+                                    <span>40 m2</span>
+                                    <span class="line"></span>
+                                    <img src="./src/images/2.svg" alt="">
+                                    <span>48 days</span>
+                                </button>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="project__bg bg-image">
-                    <div class="mask"></div>
-                    <div class="steps" id="steps">
-                        <div class="row steps__tabs">
-                            <div class="col text">
-                                <h3 class="steps__subtitle">How we are working</h3>
-                                <h2 class="steps__title">6 steps to <br>
-                                    the goal</h2>
-                            </div>
-                            <div class="col row steps__caption">
-                                <div class="col-4 steps__tab steps__tab_active">
-                                    <span>01</span>
-                                    <p>Departure to <br>
-                                        room measurements</p>
-                                </div>
-                                <div class="col-4 steps__tab">
-                                    <span>02</span>
-                                    <p>Compilation
-                                        estimates</p>
-                                </div>
-                                <div class="col-4 steps__tab">
-                                    <span>03</span>
-                                    <p>Development
-                                        project design</p>
-                                </div>
-                                <div class="col-4 steps__tab">
-                                    <span>04</span>
-                                    <p>Purchasing Supplies</p>
-                                </div>
-                                <div class="col-4 steps__tab">
-                                    <span>05</span>
-                                    <p>Repair finishing work</p>
-                                </div>
-                                <div class="col-4 steps__tab">
-                                    <span>06</span>
-                                    <p>Acceptance of repair work</p>
-                                </div>
-                            </div>
-                            <div class="steps__content steps__content_active">
-                                <div class="about">
-                                    <div class="about__num">1/6</div>
-                                    <h3 class="about__title">Departure for
-                                        measurements premises</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                <div class="about">
-                                    <div class="about__num">2/6</div>
-                                    <h3 class="about__title">Compilation
-                                        estimates</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                <div class="about">
-                                    <div class="about__num">3/6</div>
-                                    <h3 class="about__title">Development
-                                        project design</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                <div class="about">
-                                    <div class="about__num">4/6</div>
-                                    <h3 class="about__title">Purchasing Supplies</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                <div class="about">
-                                    <div class="about__num">5/6</div>
-                                    <h3 class="about__title">Repair finishing work</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="steps__content">
-                                <div class="about">
-                                    <div class="about__num">6/6</div>
-                                    <h3 class="about__title">Acceptance of repair work</h3>
-                                    <h4 class="about__descr">After your call, we go to you to consult and measure the
-                                        premises
-                                        of your apartment. During our meeting, you can ask absolutely any number of
-                                        questions. An appraiser-appraiser leaves to measure the room.
-                                        He will advise you on the issues of repair technology, apartment design,
-                                        terms
-                                        of repair of the apartment as a whole and its individual stages.</h4>
-                                </div>
-                                <div>
-                                    <img src="./src/images/steps-img.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </section>
+        </main>
 
-
-                    <div class="team" id="team">
-                        <h2 class="team__title">our team</h2>
-                        <div class="team__icon">
-                            <img src="./src/images/svg/team__icon.svg" alt="">
-                        </div>
-                        <div class="team__descr">Our team has helped to become happier for more than
-                            500 families and we are not going to stop</div>
-                        <div class="row">
-                            <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/team/card-image1.png" class="card-img-top" alt="" />
-                                    <div class="card-icon">
-                                        <img src="./src/images/team/idea.svg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Dmitry tulyakov</h4>
-                                        <p class="card-text">Project manager</p>
-                                        <button class="btn">Work experience 8 years</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/team/card-image2.png" class="card-img-top" alt="" />
-                                    <div class="card-icon">
-                                        <img src="./src/images/team/lamp.svg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Larisa Kotlyarova</h4>
-                                        <p class="card-text">Designer</p>
-                                        <button class="btn">Work experience 6 years</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <img src="./src/images/team/card-image3.png" class="card-img-top" alt="" />
-                                    <div class="card-icon">
-                                        <img src="./src/images/team/portfolio.svg" alt="">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Alexey Efimov</h4>
-                                        <p class="card-text">Foreman</p>
-                                        <button class="btn">Work experience 12 years</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <section class="reviews">
-            <div class="container"></div>
-        </section>
-
-        <section class="questions">
-            <div class="container"></div>
-        </section>
-
-        <section class="contacts">
-            <div class="container"></div>
-        </section>
-    </main>
-
-    <footer class="footer">
-    </footer>
+        <footer class="footer">
+        </footer>
+    </div>
 
 
     <script src="./src/libs/jquery/js/jquery.min.js"></script>

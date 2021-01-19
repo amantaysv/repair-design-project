@@ -1,7 +1,9 @@
 .online-control {
     margin-top: 90px;
+    background: url(../images/vector-bg.png) center center/cover no-repeat;
 
     &__title {
+        color: #fff;
         text-transform: uppercase;
         font-family: $yo;
         text-align: center;
@@ -36,13 +38,12 @@
     &__descr {
         position: relative;
         max-width: 682px;
-        margin: 0 auto;
+        margin: 100px auto 0;
         text-align: center;
         font-family: $fbc;
         color: #363636;
         font-size: 20px;
         line-height: 34px;
-        margin-top: 100px;
 
         &::before {
             content: '';

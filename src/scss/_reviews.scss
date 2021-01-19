@@ -1,0 +1,86 @@
+.reviews {
+    background: #fff;
+    padding-top: 90px;
+
+    &__title {
+        font-family: $yo;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #181818;
+        text-align: center;
+    }
+
+    &__icon {
+        @include icon;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        margin: 24px 0 39px;
+        font-family: $fbc;
+        color: #363636;
+    }
+
+    .row {
+        column-gap: calc(54px - 1.5rem);
+
+        .col {
+            flex-basis: calc(376px + 1.5rem);
+        }
+    }
+
+    .card {
+        position: relative;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            padding: 24px 20px 11px;
+        }
+
+        &-img {
+            width: 76px;
+            height: 76px;
+            margin-right: 23px;
+        }
+
+        &-body {
+            padding: 11px 32px 85px 20px;
+        }
+
+        &-title {
+            font-family: $yo;
+            font-size: 18px;
+            line-height: 23px;
+            color: #181818;
+        }
+
+        &-subtitle {
+            font-family: $fbc;
+            font-size: 15px;
+            color: #959595;
+            line-height: 27px;
+        }
+
+        .btn {
+            @include btn(294px, 54px, 17px, $yo);
+            position: absolute;
+            bottom: -27px;
+            left: 0;
+            border-radius: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .line {
+                width: 1px;
+                height: 100%;
+                background: #fff;
+            }
+        }
+    }
+}

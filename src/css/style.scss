@@ -18,6 +18,7 @@ html:focus-within {
 
 body {
     position: relative;
+    background: rgb(192, 192, 192);
 }
 
 .bg-image {
@@ -27,6 +28,7 @@ body {
 @import "../scss/variables";
 @import "../scss/header";
 @import "../scss/home";
+@import "../scss/vector-bg";
 @import "../scss/completed-projects";
 @import "../scss/online-control";
 @import "../scss/registration";
@@ -36,4 +38,4 @@ body {
 @import "../scss/project";
 @import "../scss/steps";
 @import "../scss/team";
-
+@import "../scss/reviews";

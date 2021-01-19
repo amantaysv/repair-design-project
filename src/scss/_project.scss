@@ -1,18 +1,6 @@
 .project {
-    margin-top: 50px;
-    position: relative;
-    padding-top: 103px;
-    z-index: 1;
-
-    &__bg {
-        padding: 103px 100px 0;
-        background: #131313;
-    }
-
-    .mask {
-        top: -100px;
-        background: url(../images/steps-vector__bg.png) no-repeat;
-    }
+    padding-top: 153px;
+    background: url(../images/vector-bg.png) center center/cover;
 
     &__title {
         font-family: $yo;
@@ -37,17 +25,16 @@
     }
 
     .row {
-        max-width: 1236px;
         margin: 0 auto;
 
         .col {
+            flex-basis: calc(392px + 1.5rem);
+
             .card {
-                max-width: 392px;
                 position: relative;
                 min-height: 211px;
                 background: transparent;
                 box-shadow: none;
-                margin: 0 auto;
 
                 &-body {
                     padding: 25px 2rem;

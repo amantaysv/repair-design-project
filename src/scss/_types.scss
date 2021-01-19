@@ -17,13 +17,11 @@
     }
 
     .row {
-        max-width: 1236px;
-        margin: 0 auto;
 
         .col {
+            flex-basis: calc(393px + 1.5rem);
 
             .card {
-                max-width: 392px;
                 position: relative;
                 background: transparent;
                 box-shadow: none;
