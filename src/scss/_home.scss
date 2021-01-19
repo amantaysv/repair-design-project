@@ -3,9 +3,8 @@
     padding-top: 83px;
 
     &__bg {
-        position: relative;
-        width: calc(100%);
         padding: 194px 0 206px 82px;
+        position: relative;
         background: #131313 url(../images/home__bg.png) right top/cover no-repeat;
         margin-left: auto;
     }
@@ -18,7 +17,6 @@
         margin-left: 60px;
         max-width: 514px;
         position: relative;
-        z-index: 1;
     }
 
     &__title {
@@ -67,12 +65,16 @@
         top: 0;
         left: 0;
         font-family: $fdc;
-        color: $yellow;
+
         text-transform: uppercase;
         line-height: 16px;
         height: 100%;
         width: 82px;
         background: #131313;
+
+        a {
+            color: $yellow;
+        }
 
         p {
             transform: rotate(90deg) translate(-50%);

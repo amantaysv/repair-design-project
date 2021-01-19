@@ -1,8 +1,8 @@
 .request {
     padding: 0 100px 135px 0;
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
+    display: flex;
 
     &__bg {
         position: relative;
@@ -79,7 +79,6 @@
         max-width: 506px;
         max-height: 509px;
         width: 100%;
-        display: flex;
         flex-direction: column;
         background: #131313;
         z-index: 1;
@@ -154,7 +153,6 @@
         position: relative;
         margin-left: auto;
         width: 441px;
-        display: flex;
 
         .pig {
             position: relative;

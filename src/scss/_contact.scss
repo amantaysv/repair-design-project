@@ -1,0 +1,23 @@
+.contact {
+    margin-top: -222px;
+    &__bg {
+        padding: 274px 0 65px;
+        background: #fff url(../images/contact/bg.png);
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .mask {
+        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+    }
+
+    &__title {
+        font-family: $yo;
+        font-size: 20px;
+        line-height: 28px;
+        color: $yellow;
+        text-transform: uppercase;
+    }
+}

@@ -1,6 +1,6 @@
 .reviews {
-    background: #fff;
-    padding-top: 90px;
+    background: #fff url(../images/teambg.png) center 1068px;
+    padding-top: 103px;
 
     &__title {
         font-family: $yo;
@@ -19,7 +19,7 @@
         font-size: 20px;
         line-height: 27px;
         text-align: center;
-        margin: 24px 0 39px;
+        margin: 24px 0 0;
         font-family: $fbc;
         color: #363636;
     }
@@ -34,6 +34,7 @@
 
     .card {
         position: relative;
+        margin: 40px 0;
 
         &-header {
             display: flex;

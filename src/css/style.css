@@ -30,15 +30,10 @@ body {
 }
 
 .header .navbar {
-  max-width: 1416px;
-  width: 100%;
+  padding: 24px 115px 22px 97px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 24px 115px 22px 97px;
   text-transform: uppercase;
 }
 
@@ -59,10 +54,6 @@ body {
 
 .header .navbar-nav {
   font-family: "FuturaBookC", sans-serif;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
 }
 
 .header .navbar-nav .nav-link {
@@ -103,9 +94,8 @@ body {
 }
 
 .home__bg {
-  position: relative;
-  width: calc(100%);
   padding: 194px 0 206px 82px;
+  position: relative;
   background: #131313 url(../images/home__bg.png) right top/cover no-repeat;
   margin-left: auto;
 }
@@ -118,7 +108,6 @@ body {
   margin-left: 60px;
   max-width: 514px;
   position: relative;
-  z-index: 1;
 }
 
 .home__title {
@@ -184,12 +173,15 @@ body {
   top: 0;
   left: 0;
   font-family: "FuturaDemiC", sans-serif;
-  color: #E3B873;
   text-transform: uppercase;
   line-height: 16px;
   height: 100%;
   width: 82px;
   background: #131313;
+}
+
+.home__link a {
+  color: #E3B873;
 }
 
 .home__link p {
@@ -263,13 +255,6 @@ body {
 }
 
 .completed-projects__caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style-type: none;
   margin-bottom: 53px;
   padding: 0;
 }
@@ -310,7 +295,6 @@ body {
 .completed-projects__about {
   position: relative;
   max-width: 420px;
-  width: 100%;
   margin-right: 80px;
   padding-bottom: 100px;
 }
@@ -453,19 +437,23 @@ body {
   top: -34px;
 }
 
+.registration {
+  padding-top: 42px;
+}
+
 .registration__form {
   margin: 0 auto;
   max-width: 769px;
 }
 
 .registration__form .row {
-  max-width: 769px;
+  margin: 0;
 }
 
 .registration__form .row .label {
   width: 231px;
   border-bottom: 1px solid #36363630;
-  margin: 92px auto 0;
+  margin: 50px auto 0;
   padding: 0;
 }
 
@@ -522,14 +510,14 @@ body {
   line-height: 51px;
   color: #fff;
   font-size: 15px;
-  font-family: #E3B873;
+  font-family: "FuturaDemiC", sans-serif;
   background: #E3B873;
   border: none;
   padding: 0;
   text-align: center;
   margin: 0;
   line-height: 26px;
-  margin: 92px auto 0;
+  margin: 50px auto 0;
 }
 
 .registration__form .row .btn:focus {
@@ -695,14 +683,14 @@ body {
 
 .request {
   padding: 0 100px 135px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .request__bg {
@@ -832,9 +820,6 @@ body {
   max-width: 506px;
   max-height: 509px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -979,9 +964,6 @@ body {
   position: relative;
   margin-left: auto;
   width: 441px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .request .saveMoney .pig {
@@ -1163,10 +1145,6 @@ body {
   color: #363636;
   margin: 24px 0 39px;
   font-family: "FuturaBookC", sans-serif;
-}
-
-.project .row {
-  margin: 0 auto;
 }
 
 .project .row .col {
@@ -1353,7 +1331,7 @@ body {
 
 .team {
   padding-top: 103px;
-  background: url(../images/vector-bg.png) center center/cover;
+  background: url(../images/teambg.png) center top;
 }
 
 .team__title {
@@ -1419,7 +1397,6 @@ body {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin: 0 auto;
 }
 
 .team .row .col .card-icon {
@@ -1530,8 +1507,8 @@ body {
 }
 
 .reviews {
-  background: #fff;
-  padding-top: 90px;
+  background: #fff url(../images/teambg.png) center 1068px;
+  padding-top: 103px;
 }
 
 .reviews__title {
@@ -1577,7 +1554,7 @@ body {
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  margin: 24px 0 39px;
+  margin: 24px 0 0;
   font-family: "FuturaBookC", sans-serif;
   color: #363636;
 }
@@ -1594,6 +1571,7 @@ body {
 
 .reviews .card {
   position: relative;
+  margin: 40px 0;
 }
 
 .reviews .card-header {
@@ -1666,5 +1644,259 @@ body {
   width: 1px;
   height: 100%;
   background: #fff;
+}
+
+.question {
+  background: #fff url(../images/teambg.png) center 115%;
+  padding-top: 120px;
+}
+
+.question__form {
+  position: relative;
+  margin: 0 auto;
+  padding: 34.4px 181.5px;
+  max-width: 883px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #131313;
+  z-index: 2;
+}
+
+.question__form .title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Yeseva One", serif;
+  text-transform: uppercase;
+  margin-bottom: 45.8px;
+}
+
+.question__form .row {
+  -webkit-column-gap: 48px;
+          column-gap: 48px;
+  margin: 0;
+}
+
+.question__form .row .col {
+  padding: 0;
+}
+
+.question__form .label {
+  min-width: 231px;
+  border-bottom: 1px solid #ffffff26;
+  margin-bottom: 48px;
+}
+
+.question__form .label:nth-of-type(3) {
+  margin-bottom: 0;
+}
+
+.question__form .label:focus-within {
+  border-bottom: 1px solid #E3B873;
+}
+
+.question__form .label:focus-within .text {
+  color: #E3B873;
+}
+
+.question__form .label .text {
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff80;
+  font-family: "FuturaBookC", sans-serif;
+}
+
+.question__form .label .input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  font-family: "FuturaBookC", sans-serif;
+  outline: none;
+  background: none;
+}
+
+.question__form .label .input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.question__form .label .input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.question__form .label .input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.question__form .label .input::placeholder {
+  color: #fff;
+}
+
+.question__form .checkbox {
+  max-width: 286px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 27px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+  font-family: "FuturaBookC", sans-serif;
+  color: #fff;
+  margin-top: 46px;
+}
+
+.question__form .checkbox .input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+  width: 286px;
+  height: 18px;
+}
+
+.question__form .checkbox .input:checked ~ .checkmark {
+  background: #E3B873 url(../images/svg/checkbox.svg) center no-repeat;
+}
+
+.question__form .checkbox .checkmark {
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 2px;
+}
+
+.question__form .btn {
+  display: block;
+  width: 213px;
+  height: 51px;
+  line-height: 51px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "FuturaDemiC", sans-serif;
+  background: #E3B873;
+  border: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  margin: 50px auto 0;
+  border-radius: 0;
+}
+
+.question__form .btn:focus {
+  outline: none;
+}
+
+.question .mask {
+  background: url(../images/question__bg.png) 0 0/cover;
+  z-index: -1;
+}
+
+.contact {
+  margin-top: -222px;
+}
+
+.contact__bg {
+  padding: 274px 0 65px;
+  background: #fff url(../images/contact/bg.png);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.contact .mask {
+  background: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.contact__title {
+  font-family: "Yeseva One", serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #E3B873;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: #131313;
+}
+
+.footer .navbar {
+  padding: 49px 115px 47px 97px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  text-transform: uppercase;
+}
+
+.footer .navbar-brand {
+  color: #E3B873;
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 14px;
+  margin-right: 69px;
+}
+
+.footer .navbar-brand:hover {
+  color: #E3B873;
+}
+
+.footer .navbar-collapse {
+  max-width: 980px;
+}
+
+.footer .navbar-nav {
+  font-family: "FuturaBookC", sans-serif;
+}
+
+.footer .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .navbar-nav .nav-link:hover {
+  color: #E3B873;
+}
+
+.footer .navbar-nav .nav-link.active {
+  color: #E3B873;
+}
+
+.footer .navbar-nav .btn {
+  display: block;
+  width: 161px;
+  height: 37px;
+  line-height: 37px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "FuturaDemiC", sans-serif;
+  background: #E3B873;
+  border: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.footer .navbar-nav .btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

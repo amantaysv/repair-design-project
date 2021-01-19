@@ -1,15 +1,17 @@
 .registration {
+    padding-top: 42px;
+
     &__form {
         margin: 0 auto;
         max-width: 769px;
 
         .row {
-            max-width: 769px;
+            margin: 0;
 
             .label {
                 width: 231px;
                 border-bottom: 1px solid #36363630;
-                margin: 92px auto 0;
+                margin: 50px auto 0;
                 padding: 0;
 
                 &:focus-within {
@@ -48,9 +50,9 @@
             }
 
             .btn {
-                @include btn(200px, 51px, 15px, $yellow);
+                @include btn(200px, 51px, 15px, $fdc);
                 line-height: 26px;
-                margin: 92px auto 0;
+                margin: 50px auto 0;
             }
         }
 

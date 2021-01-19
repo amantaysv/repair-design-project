@@ -1,5 +1,6 @@
 .steps {
     padding: 0 100px;
+
     &__tabs {
         position: relative;
         z-index: 1;
@@ -47,7 +48,6 @@
         }
 
         p {
-
             font-size: 15px;
             line-height: 18px;
             font-family: $fbc;

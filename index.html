@@ -10,16 +10,16 @@
 
 <body data-mdb-spy="scroll" data-mdb-target="#scrollspy" data-mdb-offset="0">
     <header class="header fixed-top">
-        <nav id="scrollspy" class="navbar navbar-expand-lg navbar-dark scrolling-navbar">
+        <nav id="scrollspy" class="navbar navbar-expand-lg navbar-dark scrolling-navbar justify-content-center">
             <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">890</span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav smooth-scroll">
+                <ul class="navbar-nav smooth-scroll justify-content-between w-100">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">projects</a>
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#reviews">reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">contacts</a>
+                        <a class="nav-link" href="#contact">contacts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
@@ -58,12 +58,14 @@
                             with work time saving up to 45 days and 20% from
                             cost of materials due to the organization of work</h2>
                         <form class="home__form">
-                            <button class="btn">calculate the cost</button>
-                            <button class="btn">submit your application</button>
+                            <a href="#measurements" class="btn">calculate the cost</a>
+                            <a href="#request" class="btn">submit your application</a>
                         </form>
                     </div>
                     <div class="home__link">
-                        <p>instagram</p>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <p>instagram</p>
+                        </a>
                     </div>
                 </div>
                 <div class="home__scroll-down">
@@ -74,7 +76,7 @@
             <div class="vector-bg__first">
                 <section class="completed-projects" id="projects">
                     <div class="completed-projects__tabs">
-                        <ul class="completed-projects__caption">
+                        <ul class="completed-projects__caption nav justify-content-end">
                             <li class="completed-projects__tab completed-projects__tab_active">
                                 <p>Rostov-on-Don, Admiral</p>
                             </li>
@@ -276,7 +278,7 @@
             <div class="vector-bg__second">
                 <section class="registration">
                     <form class="registration__form">
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <label for="" class="label">
                                 <div class="text">Name</div>
                                 <input type="text" class="input" required placeholder="What is your name:">
@@ -358,8 +360,8 @@
                     </div>
                 </section>
 
-                <section class="request">
-                    <div class="request__bg">
+                <section class="request" id="request">
+                    <div class="request__bg hidden">
                         <img src="./src/images/request__bg.png" alt="" class="img-fluid">
                         <span class="item-1">01</span>
                         <span class="item-2">Our specialist will arrive for measurements per day <br>
@@ -372,7 +374,7 @@
                         <span class="item-8">Get a cost estimate and <br>
                             the timing of your future repairs</span>
                     </div>
-                    <form class="request__form bg-image">
+                    <form class="request__form d-flex bg-image">
                         <div class="mask"></div>
                         <div class="title">Leave a request for free <br>
                             departure of the measurer
@@ -396,7 +398,7 @@
                         </label>
                         <button class="btn">call the measurer</button>
                     </form>
-                    <div class="saveMoney">
+                    <div class="saveMoney d-flex">
                         <div class="pig">
                             <img src="./src/images/svg/pig.svg" alt="">
                         </div>
@@ -490,12 +492,12 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="wrapper wrapper-left">
-                                            <a href="./src/images/fantasies/empire/1.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/empire/1.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Empire" class="fancy">
                                                 <img src="./src/images/fantasies/empire/thumb-1.jpg" alt=""
                                                     class="img-fluid">
                                             </a>
-                                            <a href="./src/images/fantasies/empire/2.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/empire/2.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Empire" class="fancy">
                                                 <img src="./src/images/fantasies/empire/thumb-2.jpg" alt=""
                                                     class="img-fluid">
@@ -504,12 +506,12 @@
                                     </div>
                                     <div class="col">
                                         <div class="wrapper wrapper-right">
-                                            <a href="./src/images/fantasies/empire/3.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/empire/3.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Empire" class="fancy">
                                                 <img src="./src/images/fantasies/empire/thumb-3.jpg" alt=""
                                                     class="img-fluid">
                                             </a>
-                                            <a href="./src/images/fantasies/empire/4.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/empire/4.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Empire" class="fancy">
                                                 <img src="./src/images/fantasies/empire/thumb-4.jpg" alt=""
                                                     class="img-fluid">
@@ -522,12 +524,12 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="wrapper wrapper-left">
-                                            <a href="./src/images/fantasies/classical/1.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/classical/1.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Classical" class="fancy">
                                                 <img src="./src/images/fantasies/classical/thumb-1.jpg" alt=""
                                                     class="img-fluid">
                                             </a>
-                                            <a href="./src/images/fantasies/classical/2.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/classical/2.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Classical" class="fancy">
                                                 <img src="./src/images/fantasies/classical/thumb-2.jpg" alt=""
                                                     class="img-fluid">
@@ -536,12 +538,12 @@
                                     </div>
                                     <div class="col">
                                         <div class="wrapper wrapper-right">
-                                            <a href="./src/images/fantasies/classical/3.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/classical/3.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Classical" class="fancy">
                                                 <img src="./src/images/fantasies/classical/thumb-3.jpg" alt=""
                                                     class="img-fluid">
                                             </a>
-                                            <a href="./src/images/fantasies/classical/4.jpg" data-fancybox="images"
+                                            <a href="./src/images/fantasies/classical/4.webp" data-fancybox="images"
                                                 data-width="800" data-caption="Classical" class="fancy">
                                                 <img src="./src/images/fantasies/classical/thumb-4.jpg" alt=""
                                                     class="img-fluid">
@@ -898,7 +900,7 @@
                             <h2 class="steps__title">6 steps to <br>
                                 the goal</h2>
                         </div>
-                        <div class="col row steps__caption">
+                        <div class="col row justify-content-between steps__caption">
                             <div class="col-4 steps__tab steps__tab_active">
                                 <span>01</span>
                                 <p>Departure to <br>
@@ -1117,10 +1119,10 @@
                                     recommend these masters.
                                 </h6>
                                 <button class="btn">
-                                    <img src="./src/images/1.svg" alt="">
+                                    <img src="./src/images/reviews/btn-icon1.svg" alt="">
                                     <span>40 m2</span>
                                     <span class="line"></span>
-                                    <img src="./src/images/2.svg" alt="">
+                                    <img src="./src/images/reviews/btn-icon2.svg" alt="">
                                     <span>48 days</span>
                                 </button>
                             </div>
@@ -1129,9 +1131,8 @@
                     <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-header">
-                                <img src="./src/images/reviews/card-image1.png" class="card-img" alt="">
-                                <h5 class="card-title">Fedosova Maria <br>
-                                    Konstantinovna</h5>
+                                <img src="./src/images/reviews/card-image2.png" class="card-img" alt="">
+                                <h5 class="card-title">Afanasyev Sergey Alexandrovich</h5>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-subtitle">
@@ -1143,11 +1144,11 @@
                                     recommend these masters.
                                 </h6>
                                 <button class="btn">
-                                    <img src="./src/images/1.svg" alt="">
-                                    <span>40 m2</span>
+                                    <img src="./src/images/reviews/btn-icon1.svg" alt="">
+                                    <span>90 m2</span>
                                     <span class="line"></span>
-                                    <img src="./src/images/2.svg" alt="">
-                                    <span>48 days</span>
+                                    <img src="./src/images/reviews/btn-icon2.svg" alt="">
+                                    <span>128 days</span>
                                 </button>
                             </div>
                         </div>
@@ -1155,9 +1156,8 @@
                     <div class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                         <div class="card">
                             <div class="card-header">
-                                <img src="./src/images/reviews/card-image1.png" class="card-img" alt="">
-                                <h5 class="card-title">Fedosova Maria <br>
-                                    Konstantinovna</h5>
+                                <img src="./src/images/reviews/card-image3.png" class="card-img" alt="">
+                                <h5 class="card-title">Kiriev Egor Leonidovich</h5>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-subtitle">
@@ -1169,21 +1169,96 @@
                                     recommend these masters.
                                 </h6>
                                 <button class="btn">
-                                    <img src="./src/images/1.svg" alt="">
-                                    <span>40 m2</span>
+                                    <img src="./src/images/reviews/btn-icon1.svg" alt="">
+                                    <span>56 m2</span>
                                     <span class="line"></span>
-                                    <img src="./src/images/2.svg" alt="">
-                                    <span>48 days</span>
+                                    <img src="./src/images/reviews/btn-icon2.svg" alt="">
+                                    <span>86 days</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+            </section>
+
+            <section class="question">
+                <form class="question__form bg-image">
+                    <div class="mask"></div>
+                    <div class="title">have any questions?</div>
+                    <div class="row justify-content-center">
+                        <label for="" class="label col">
+                            <div class="text">Name</div>
+                            <input type="text" class="input" required placeholder="What is your name:">
+                        </label>
+                        <label for="" class="label col">
+                            <div class="text">Phone</div>
+                            <input type="tel" class="input" required placeholder="Your phone number:">
+                        </label>
+                        <label for="" class="label col col-12">
+                            <div class="text">Question</div>
+                            <input type="email" class="input" required placeholder="I want to know:">
+                        </label>
+                    </div>
+
+                    <label for="" class="checkbox">
+                        <input type="checkbox" class="input" checked="checked">
+                        <span class="checkmark"></span>
+                        I agree to the processing of personal data
+                    </label>
+                    <button class="btn">submit</button>
+                </form>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact__bg bg-image">
+                    <div class="mask"></div>
+                    <h2 class="contact__title mb-4">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
+                        Decorum Tel +7 (928) 768 32 29</h2>
+                    <img src="./src/images/contact/icon-mail.svg" class="me-2 mb-5" alt="">
+                    <img src="./src/images/contact/icon-instagram.svg" class="ms-2 mb-5" alt="">
+                    <div class="map">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d730.9267235820588!2d74.59549254525575!3d42.879030305243134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb72887744b39%3A0x6dba7b1390a879ff!2sKojomkul%20Apartment!5e0!3m2!1sen!2skg!4v1610451849934!5m2!1sen!2skg"
+                        width="925" height="465" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
             </section>
         </main>
 
         <footer class="footer">
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+                <a href="#" class="navbar-brand">IC "Repair Design Project"</a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav justify-content-between w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#measurements">measurements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn">request a call</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </footer>
     </div>
 

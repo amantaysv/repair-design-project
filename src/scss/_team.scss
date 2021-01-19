@@ -1,6 +1,6 @@
 .team {
     padding-top: 103px;
-    background: url(../images/vector-bg.png) center center/cover;
+    background: url(../images/teambg.png) center top;
 
     &__title {
         font-family: $yo;
@@ -34,7 +34,6 @@
                 position: relative;
                 background: transparent;
                 box-shadow: none;
-                margin: 0 auto;
 
                 &-icon {
                     position: absolute;
