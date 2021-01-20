@@ -50,7 +50,6 @@
         position: relative;
         font-family: $yo;
         font-size: 27px;
-        line-height: 37px;
         text-transform: uppercase;
         color: $yellow;
         margin-bottom: 34px;
@@ -69,7 +68,6 @@
     &__descr {
         font-family: $fbc;
         font-size: 18px;
-        line-height: 29px;
         margin-bottom: 8px;
     }
 
@@ -79,13 +77,12 @@
                 margin-top: 34px;
                 font-family: $fbc;
                 font-size: 15px;
-                line-height: 20px;
+                line-height: 1.5;
 
                 span {
                     display: block;
                     font-family: $yo;
                     font-size: 18px;
-                    line-height: 25px;
                     text-transform: uppercase;
                     color: $yellow;
                     margin-bottom: 9px;
@@ -97,5 +94,33 @@
     .owl-carousel {
         width: calc(100% - 500px);
         position: static;
+
+        .owl-nav {
+            .owl-prev {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 8px;
+                background: none;
+                left: 0;
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            .owl-next {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 8px;
+                background: none;
+                left: 174px;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        }
     }
 }

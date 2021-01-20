@@ -5,7 +5,6 @@
     &__title {
         font-family: $yo;
         font-size: 20px;
-        line-height: 28px;
         text-transform: uppercase;
         color: #fff;
         text-align: center;
@@ -17,7 +16,6 @@
 
     &__subtitle {
         font-size: 20px;
-        line-height: 27px;
         text-align: center;
         color: #fff;
         margin: 24px 0 70px;
@@ -78,7 +76,6 @@
                     color: #181818;
                     font-family: $yo;
                     font-size: 18px;
-                    line-height: 25px;
                     font-weight: bold;
                     text-align: center;
                 }
@@ -87,7 +84,6 @@
                     color: #959595;
                     font-family: $fbc;
                     font-size: 18px;
-                    line-height: 26px;
                     text-align: center;
                     padding: 0;
                 }
@@ -111,7 +107,6 @@
         font-family: $fbc;
         color: #363636;
         font-size: 20px;
-        line-height: 34px;
 
         &::before {
             content: '';

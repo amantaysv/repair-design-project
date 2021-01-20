@@ -1,15 +1,35 @@
 @media(min-width:1440px) {}
 
 @media (min-width:1200px) and (max-width:1439px) {
-    .header {
-        max-width: calc(1140px - 1.5rem);
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-
-        .navbar {
-            padding: 24px 40px 22px 82px;
+    .vector-bg {
+        &__third {
+            background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 64% no-repeat;
         }
+    }
+
+    .header {
+        .navbar {
+            max-width: calc(1140px - 1.5rem);
+            padding: 24px 40px 22px 82px;
+
+            &-brand {
+                font-size: 13px;
+            }
+
+            &-nav {
+                .nav-link {
+                    font-size: 13px;
+                }
+
+                .btn {
+                    @include btn(141px, 36px, 11px, $fdc);
+                }
+            }
+        }
+    }
+
+    .home {
+        padding-top: 82px;
     }
 
     .completed-projects {
@@ -25,11 +45,39 @@
         }
     }
 
+    .online-control {
+        &__video-bg {
+            margin: 30px auto 0;
+            max-width: 670px;
+
+            .mask {
+                background: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        &__descr {
+            position: relative;
+        }
+    }
+
+    .types {
+        .row {
+
+            .col {
+                flex-basis: calc(322px + 1.5rem);
+
+                .card {
+
+                    .btn {
+                        @include btn (228px, 54px, 15px, $yo);
+                    }
+                }
+            }
+        }
+    }
+
     .request {
-        padding: 0 40px 135px 0;
-        flex-wrap: wrap;
-        align-items: center;
-        display: flex;
+        padding: 0 0 80px 0;
         flex-direction: column;
 
         &__bg {
@@ -44,9 +92,519 @@
             margin: 30px auto 0;
         }
     }
+
+    .fantasies {
+        &__bg {
+            padding: 117px 40px 96px 82px;
+        }
+
+        &__content {
+            width: calc(100% - 310px);
+
+            .row {
+                .col {
+                    .wrapper {
+
+                        &-left {
+                            top: 0;
+                        }
+
+                        &-right {
+                            top: 106px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project {
+        padding-top: 70px;
+
+        .row {
+
+            .col {
+                flex-basis: calc(322px + 1.5rem);
+
+                .card {
+
+                    &-title {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+
+                    &-text {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                    .btn {
+                        @include btn (70%, 54px, 15px, $yo);
+                    }
+                }
+            }
+        }
+    }
+
+    .steps {
+        padding: 0 40px 0 82px;
+
+        .text {
+            margin-right: 80px;
+        }
+
+        &__content {
+
+            .about {
+                margin-right: 80px;
+
+                &__num {
+                    font-size: 20px;
+                }
+
+                &__title {
+                    font-size: 16px;
+                }
+
+                &__descr {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .team {
+        .row {
+            column-gap: calc(80px - 1.5rem);
+
+            .col {
+                flex-basis: calc(245px + 1.5rem);
+            }
+        }
+    }
+
+    .reviews {
+        .row {
+            column-gap: calc(30px - 1.5rem);
+
+            .col {
+                flex-basis: calc(322px + 1.5rem);
+            }
+        }
+
+        .card {
+            &-body {
+                padding: 11px 32px 55px 20px;
+            }
+
+            .btn {
+                @include btn(78%, 54px, 15px, $yo);
+                display: flex;
+            }
+        }
+    }
+
+    .question {
+        &__form {
+            padding: 35px 75px;
+            max-width: 669px;
+        }
+    }
+
+    .contact {
+        .map {
+            margin: 0 auto;
+            max-width: 725px;
+            height: 465px;
+        }
+    }
+
+    .footer {
+        .navbar {
+            padding: 49px 40px 47px 82px;
+        }
+    }
 }
 
-@media(min-width:992px) {}
+@media(min-width:992px) and (max-width: 1199px) {
+    .vector-bg {
+        &__first {
+            background: #fff url(../images/vector-bg/first.webp) center -205px no-repeat;
+        }
+
+        &__second {
+            background: #fff url(../images/vector-bg/second.webp) center center/cover no-repeat;
+        }
+
+        &__third {
+            background: #fff linear-gradient(#fff 0, #131313 0) center 429px/100% 61.6% no-repeat;
+
+            .mask {
+                background: url(../images/steps/vector__bg.webp) left 523px no-repeat;
+            }
+        }
+    }
+
+    .header {
+        .navbar {
+            max-width: calc(960px - 1.5rem);
+            padding: 24px 40px 22px 82px;
+
+
+            &-brand {
+                font-size: 12px;
+                margin-right: 30px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            &-nav {
+
+                .nav-link {
+                    font-size: 12px;
+                }
+
+                .btn {
+                    @include btn(141px, 30px, 11px, $fdc);
+                }
+            }
+        }
+    }
+
+    .home {
+        padding-top: 81px;
+
+        .wrapper {
+            margin-left: 50px;
+            max-width: 514px;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__descr {
+            font-size: 18px;
+        }
+
+        &__form {
+            display: flex;
+
+            .btn {
+                @include btn(180px, 48px, 13px, $fdc);
+                margin-right: 30px;
+                border: 1px solid #fff;
+                background: transparent;
+            }
+        }
+    }
+
+    .completed-projects {
+        padding: 107px 40px 0 82px;
+
+        &__about {
+            max-width: 320px;
+            margin-right: 30px;
+            padding-bottom: 0;
+        }
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__descr {
+            font-size: 15px;
+        }
+
+        .row {
+            .col {
+                .wrapper {
+                    margin-top: 24px;
+                    font-size: 15px;
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            width: calc(100% - 360px);
+            position: relative;
+
+            .owl-nav {
+
+                .owl-prev {
+                    top: 338px;
+                    left: calc(50% - 87px);
+                    transform: translate(-50%);
+                }
+
+                .owl-next {
+                    top: 338px;
+                    left: calc(50% + 87px);
+                    transform: translate(-50%);
+                }
+
+            }
+
+            .owl-dots {
+                top: 330px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+
+    .online-control {
+        background: url(../images/vector-bg/second.webp) center center/cover no-repeat;
+
+        &__video-bg {
+            max-width: 550px;
+        }
+
+        &__video-btn {
+            height: 55px;
+            width: 55px;
+            background: url(../images/online-control/video-btn.svg) center -40px/145px;
+        }
+
+        &__descr {
+            max-width: 533px;
+            font-size: 16px;
+        }
+    }
+
+    .types {
+        .row {
+            .col {
+                flex-basis: calc(272px + 1.5rem);
+
+                .card {
+                    &-title {
+                        font-size: 16px;
+                    }
+
+                    &-text {
+                        font-size: 13px;
+                    }
+
+                    .btn {
+                        @include btn (70%, 40px, 14px, $yo);
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .request {
+        padding: 0 0 80px 0;
+        flex-direction: column;
+
+        &__bg {
+            display: none;
+        }
+
+        &__form {
+            margin: 0 auto;
+        }
+
+        .saveMoney {
+            margin: 30px auto 0;
+        }
+    }
+
+    .fantasies {
+        &__bg {
+            padding: 117px 40px 96px 82px;
+        }
+
+        &__title {
+            font-size: 27px;
+            font-family: $yo;
+            color: $yellow;
+            line-height: 37px;
+            text-transform: uppercase;
+            margin-bottom: 47px;
+        }
+
+        &__content {
+            width: calc(100% - 310px);
+
+            .row {
+
+                .col {
+                    &:nth-of-type(2) {
+                        display: none;
+                    }
+
+                    .wrapper {
+                        &-left {
+                            top: 0;
+                        }
+
+                        &-right {
+                            top: 106px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .project {
+        padding-top: 70px;
+
+        .row {
+            .col {
+                flex-basis: calc(272px + 1.5rem);
+
+                .card {
+                    &-body {
+                        padding: 15px 1.5rem;
+                        top: -107px;
+                    }
+
+                    &-title {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    .btn {
+                        @include btn (70%, 40px, 12px, $yo);
+                        bottom: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .steps {
+        padding: 0 40px 0 82px;
+
+        .text {
+            max-width: 290px;
+            margin-right: 48px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__tab {
+            p {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__content {
+            .about {
+                max-width: 290px;
+                margin-right: 48px;
+
+                &__num {
+                    font-size: 18px;
+                }
+
+                &__title {
+                    font-size: 15px;
+                }
+
+                &__descr {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .team {
+        .row {
+            column-gap: calc(80px - 1.5rem);
+
+            .col {
+                flex-basis: calc(205px + 1.5rem);
+            }
+        }
+    }
+
+    .reviews {
+        .row {
+            column-gap: calc(30px - 1.5rem);
+
+            .col {
+                flex-basis: calc(273px + 1.5rem);
+            }
+        }
+
+        .card {
+            &-body {
+                padding: 11px 32px 55px 20px;
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+
+            .btn {
+                @include btn(78%, 54px, 15px, $yo);
+            }
+        }
+    }
+
+    .question {
+        &__form {
+            padding: 35px 55px;
+            max-width: 550px;
+
+            .label {
+                min-width: 150px;
+            }
+        }
+    }
+
+    .contact {
+        .map {
+            margin: 0 auto;
+            max-width: 625px;
+            height: 355px;
+        }
+    }
+
+    .footer {
+        .navbar {
+            padding: 39px 40px 37px 82px;
+
+            &-brand {
+                font-size: 12px;
+                margin-right: 30px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            &-nav {
+                .nav-link {
+                    font-size: 12px;
+                }
+
+                .btn {
+                    @include btn(141px, 30px, 11px, $fdc);
+                }
+            }
+        }
+    }
+}
 
 @media(min-width:768px) {}
 

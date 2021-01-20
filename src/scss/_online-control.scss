@@ -1,6 +1,6 @@
 .online-control {
-    margin-top: 90px;
-    background: url(../images/vector-bg.png) center center/cover no-repeat;
+    margin-top: 70px;
+    background: url(../images/vector-bg/second.webp) center center/cover no-repeat;
 
     &__title {
         color: #fff;
@@ -8,7 +8,6 @@
         font-family: $yo;
         text-align: center;
         font-size: 20px;
-        line-height: 28px;
     }
 
     &__icon {
@@ -37,13 +36,12 @@
 
     &__descr {
         position: relative;
-        max-width: 682px;
+        max-width: 670px;
         margin: 100px auto 0;
         text-align: center;
         font-family: $fbc;
         color: #363636;
         font-size: 20px;
-        line-height: 34px;
 
         &::before {
             content: '';

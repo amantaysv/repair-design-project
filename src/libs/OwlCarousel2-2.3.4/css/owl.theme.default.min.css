@@ -65,32 +65,6 @@
     background: #fff;
 }
 
-.completed-projects .owl-nav .owl-prev {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 8px;
-    background: none;
-    left: 0;
-}
-
-.completed-projects .owl-nav .owl-prev:hover {
-    background: none;
-}
-
-.completed-projects .owl-nav .owl-next {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 8px;
-    background: none;
-    left: 174px;
-}
-
-.completed-projects .owl-nav .owl-next:hover {
-    background: none;
-}
-
 .owl-dots {
     position: absolute;
     bottom: 0;

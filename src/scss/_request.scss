@@ -1,5 +1,5 @@
 .request {
-    padding: 0 100px 135px 0;
+    padding: 0 100px 100px 0;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
@@ -14,13 +14,11 @@
 
             &:nth-child(even) {
                 color: #fff;
-                line-height: 25px;
                 font-family: $yo;
             }
 
             &:nth-child(odd) {
                 color: #363636;
-                line-height: 21px;
                 font-family: $fmc;
                 font-weight: 500;
             }
@@ -87,7 +85,6 @@
             text-align: center;
             color: #ffffff;
             font-size: 20px;
-            line-height: 24px;
             font-family: $fdc;
         }
 
@@ -110,7 +107,6 @@
 
             .text {
                 font-size: 15px;
-                line-height: 20px;
                 color: #ffffff80;
                 font-family: $fbc;
             }
@@ -120,7 +116,6 @@
                 border: none;
                 font-size: 18px;
                 color: #fff;
-                line-height: 25px;
                 font-family: $fbc;
                 outline: none;
                 background: none;
@@ -183,7 +178,6 @@
         .text {
             font-family: $fdc;
             font-size: 20px;
-            line-height: 25px;
             color: $yellow;
         }
     }

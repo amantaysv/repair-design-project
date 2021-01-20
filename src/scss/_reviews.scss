@@ -5,7 +5,6 @@
     &__title {
         font-family: $yo;
         font-size: 20px;
-        line-height: 28px;
         text-transform: uppercase;
         color: #181818;
         text-align: center;
@@ -17,7 +16,6 @@
 
     &__subtitle {
         font-size: 20px;
-        line-height: 27px;
         text-align: center;
         margin: 24px 0 0;
         font-family: $fbc;
@@ -27,7 +25,7 @@
     .row {
         column-gap: calc(54px - 1.5rem);
 
-        .col {
+        .col {  
             flex-basis: calc(376px + 1.5rem);
         }
     }
@@ -55,7 +53,6 @@
         &-title {
             font-family: $yo;
             font-size: 18px;
-            line-height: 23px;
             color: #181818;
         }
 
@@ -63,7 +60,6 @@
             font-family: $fbc;
             font-size: 15px;
             color: #959595;
-            line-height: 27px;
         }
 
         .btn {

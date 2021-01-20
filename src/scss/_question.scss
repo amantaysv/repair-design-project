@@ -2,7 +2,7 @@
     background: #fff url(../images/team/bg.webp) center 115%;
     padding-top: 120px;
 
-&__form {
+    &__form {
         position: relative;
         margin: 0 auto;
         padding: 34.4px 181.5px;
@@ -17,7 +17,6 @@
             text-align: center;
             color: #ffffff;
             font-size: 20px;
-            line-height: 28px;
             font-family: $yo;
             text-transform: uppercase;
             margin-bottom: 45.8px;
@@ -51,7 +50,6 @@
 
             .text {
                 font-size: 15px;
-                line-height: 20px;
                 color: #ffffff80;
                 font-family: $fbc;
             }
@@ -61,7 +59,6 @@
                 border: none;
                 font-size: 18px;
                 color: #fff;
-                line-height: 24px;
                 font-family: $fbc;
                 outline: none;
                 background: none;

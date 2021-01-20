@@ -83,7 +83,7 @@
 
         &-nav {
             font-family: $fbc;
-
+            align-items: center;
             .nav-link {
                 color: #fff;
                 font-size: 14px;
@@ -98,7 +98,7 @@
             }
 
             .btn {
-                @include btn(161px, 37px, 13px, $fdc);
+                @include btn(161px, 38px, 13px, $fdc);
             }
         }
     }

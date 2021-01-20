@@ -9,14 +9,13 @@
     }
 
     .mask {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
         z-index: -1;
     }
 
     &__title {
         font-family: $yo;
         font-size: 20px;
-        line-height: 28px;
         color: $yellow;
         text-transform: uppercase;
     }
