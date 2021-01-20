@@ -1,0 +1,55 @@
+@media(min-width:1440px) {}
+
+@media (min-width:1200px) and (max-width:1439px) {
+    .header {
+        max-width: calc(1140px - 1.5rem);
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+
+        .navbar {
+            padding: 24px 40px 22px 82px;
+        }
+    }
+
+    .completed-projects {
+        padding: 107px 40px 0 82px;
+
+        &__about {
+            max-width: 350px;
+            margin-right: 40px;
+        }
+
+        .owl-carousel {
+            width: calc(100% - 390px);
+        }
+    }
+
+    .request {
+        padding: 0 40px 135px 0;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        &__bg {
+            display: none;
+        }
+
+        &__form {
+            margin: 0 auto;
+        }
+
+        .saveMoney {
+            margin: 30px auto 0;
+
+            
+        }
+    }
+}
+
+@media(min-width:992px) {}
+
+@media(min-width:768px) {}
+
+@media(min-width:576px) {}

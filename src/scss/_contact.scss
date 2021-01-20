@@ -2,14 +2,14 @@
     margin-top: -222px;
     &__bg {
         padding: 274px 0 65px;
-        background: #fff url(../images/contact/bg.png);
+        background: #fff url(../images/contact/bg.webp);
         position: relative;
         z-index: 1;
         text-align: center;
     }
 
     .mask {
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.8);
         z-index: -1;
     }
 
@@ -19,5 +19,10 @@
         line-height: 28px;
         color: $yellow;
         text-transform: uppercase;
+    }
+    .map {
+        margin: 0 auto;
+        max-width: 925px;
+        height: 465px;
     }
 }

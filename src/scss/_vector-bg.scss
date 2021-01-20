@@ -1,17 +1,17 @@
 .vector-bg {
     &__first {
-        background: #fff url(../images/vector-bg/first.png) no-repeat;
+        background: #fff url(../images/vector-bg/first.webp) no-repeat;
     }
 
     &__second {
-        background: #fff url(../images/vector-bg.png) center center/cover no-repeat;
+        background: #fff url(../images/vector-bg/second.webp) center center/cover no-repeat;
     }
 
     &__third {
         background: #fff linear-gradient(#fff 0, #131313 0) center 573px/100% 61.6% no-repeat;
 
         .mask {
-            background: url(../images/steps-vector__bg.png) left 523px no-repeat;
+            background: url(../images/steps/vector__bg.webp) left 523px no-repeat;
         }
     }
 }

@@ -1,5 +1,5 @@
 .question {
-    background: #fff url(../images/teambg.png) center 115%;
+    background: #fff url(../images/team/bg.webp) center 115%;
     padding-top: 120px;
 
 &__form {
@@ -86,7 +86,7 @@
     }
 
     .mask {
-        background: url(../images/question__bg.png) 0 0/cover;
+        background: url(../images/question/bg.webp) 0 0/cover;
         z-index: -1;
     }
 }
