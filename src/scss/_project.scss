@@ -15,10 +15,11 @@
     }
 
     &__descr {
+        max-width: 655px;
         font-size: 20px;
         text-align: center;
         color: #363636;
-        margin: 24px 0 39px;
+        margin: 24px auto 39px;
         font-family: $fbc;
     }
 

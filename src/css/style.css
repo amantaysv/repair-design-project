@@ -320,6 +320,9 @@ body {
 .completed-projects__caption {
   margin-bottom: 53px;
   padding: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .completed-projects__tab {
@@ -392,7 +395,6 @@ body {
   margin-top: 34px;
   font-family: "FuturaBookC", sans-serif;
   font-size: 15px;
-  line-height: 1.5;
 }
 
 .completed-projects .row .col .wrapper span {
@@ -1212,10 +1214,11 @@ body {
 }
 
 .project__descr {
+  max-width: 655px;
   font-size: 20px;
   text-align: center;
   color: #363636;
-  margin: 24px 0 39px;
+  margin: 24px auto 39px;
   font-family: "FuturaBookC", sans-serif;
 }
 
@@ -1290,12 +1293,13 @@ body {
 .steps__tabs {
   position: relative;
   z-index: 1;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
 }
 
 .steps .text {
   max-width: 337px;
   width: 100%;
-  margin-right: 100px;
 }
 
 .steps__title {
@@ -2095,8 +2099,9 @@ body {
   .steps {
     padding: 0 40px 0 82px;
   }
-  .steps .text {
-    margin-right: 80px;
+  .steps__tabs {
+    -webkit-column-gap: 80px;
+            column-gap: 80px;
   }
   .steps__content .about {
     margin-right: 80px;
@@ -2167,15 +2172,9 @@ body {
   .vector-bg__first {
     background: #fff url(../images/vector-bg/first.webp) center -205px no-repeat;
   }
-  .vector-bg__second {
-    background: #fff url(../images/vector-bg/second.webp) center center/cover no-repeat;
-  }
   .vector-bg__third {
     background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 429px/100% 61.6% no-repeat;
     background: #fff linear-gradient(#fff 0, #131313 0) center 429px/100% 61.6% no-repeat;
-  }
-  .vector-bg__third .mask {
-    background: url(../images/steps/vector__bg.webp) left 523px no-repeat;
   }
   .header .navbar {
     max-width: calc(960px - 1.5rem);
@@ -2289,9 +2288,6 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
-  }
-  .online-control {
-    background: url(../images/vector-bg/second.webp) center center/cover no-repeat;
   }
   .online-control__video-bg {
     max-width: 550px;
@@ -2412,9 +2408,12 @@ body {
   .steps {
     padding: 0 40px 0 82px;
   }
+  .steps__tabs {
+    -webkit-column-gap: 48px;
+            column-gap: 48px;
+  }
   .steps .text {
     max-width: 290px;
-    margin-right: 48px;
   }
   .steps__title {
     font-size: 25px;
@@ -2515,6 +2514,734 @@ body {
   }
   .footer .navbar-nav .btn:focus {
     outline: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .vector-bg__first {
+    background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
+  }
+  .vector-bg__third {
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 440px/100% 61.1% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 440px/100% 61.1% no-repeat;
+  }
+  .header .navbar {
+    max-width: calc(720px - 1.5rem);
+    padding: 24px 40px 22px 42px;
+  }
+  .header .navbar-brand {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .header .navbar-nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .home {
+    padding-top: 80px;
+  }
+  .home .wrapper {
+    margin-left: 50px;
+    max-width: 514px;
+  }
+  .home__title {
+    font-size: 35px;
+  }
+  .home__descr {
+    font-size: 18px;
+  }
+  .home__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home__form .btn {
+    display: block;
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "FuturaDemiC", sans-serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+  .home__form .btn:focus {
+    outline: none;
+  }
+  .home__link {
+    width: 42px;
+  }
+  .completed-projects {
+    padding: 107px 40px 0 42px;
+  }
+  .completed-projects__caption {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .completed-projects__tab {
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .completed-projects__content_active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .completed-projects__about {
+    max-width: 100%;
+    margin-right: 0;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .completed-projects__title {
+    margin-bottom: 24px;
+  }
+  .completed-projects__descr {
+    font-size: 15px;
+    margin-right: 30px;
+  }
+  .completed-projects .row .col .wrapper {
+    margin-top: 0;
+  }
+  .completed-projects .row .col .wrapper span {
+    font-size: 15px;
+  }
+  .completed-projects .owl-carousel {
+    margin-top: 30px;
+    width: calc(100%);
+    position: relative;
+  }
+  .completed-projects .owl-carousel .owl-nav .owl-prev {
+    bottom: -55px;
+    left: calc(50% - 87px);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .completed-projects .owl-carousel .owl-nav .owl-next {
+    bottom: -55px;
+    left: calc(50% + 87px);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .completed-projects .owl-carousel .owl-dots {
+    bottom: -62px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .online-control {
+    margin-top: 150px;
+  }
+  .online-control__title {
+    color: #181818;
+  }
+  .online-control__video-bg {
+    max-width: 550px;
+  }
+  .online-control__video-btn {
+    height: 55px;
+    width: 55px;
+    background: url(../images/online-control/video-btn.svg) center -40px/145px;
+  }
+  .online-control__descr {
+    max-width: 533px;
+    font-size: 16px;
+  }
+  .registration__form {
+    max-width: 550px;
+  }
+  .registration__form .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .types .row .col {
+    -ms-flex-preferred-size: calc(272px + 1.5rem);
+        flex-basis: calc(272px + 1.5rem);
+  }
+  .types .row .col .card-title {
+    font-size: 16px;
+  }
+  .types .row .col .card-text {
+    font-size: 13px;
+  }
+  .types .row .col .card .btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    bottom: -20px;
+  }
+  .types .row .col .card .btn:focus {
+    outline: none;
+  }
+  .request {
+    padding: 0 0 80px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request__bg {
+    display: none;
+  }
+  .request__form {
+    margin: 0 auto;
+  }
+  .request .saveMoney {
+    margin: 30px auto 0;
+  }
+  .fantasies__bg {
+    padding: 117px 40px 96px 82px;
+  }
+  .fantasies__title {
+    font-size: 23px;
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+  }
+  .fantasies__content {
+    width: calc(100% - 210px);
+  }
+  .fantasies__content .row .col:nth-of-type(2) {
+    display: none;
+  }
+  .fantasies__content .row .col .wrapper-left {
+    top: 10px;
+  }
+  .project {
+    padding: 70px 40px 0 42px;
+  }
+  .project__descr {
+    font-size: 18px;
+  }
+  .project .row .col {
+    -ms-flex-preferred-size: calc(272px + 1.5rem);
+        flex-basis: calc(272px + 1.5rem);
+  }
+  .project .row .col .card-body {
+    padding: 15px 1.5rem;
+    top: -107px;
+  }
+  .project .row .col .card-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .project .row .col .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .project .row .col .card .btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    bottom: -20px;
+  }
+  .project .row .col .card .btn:focus {
+    outline: none;
+  }
+  .steps {
+    padding: 0 40px 0 42px;
+  }
+  .steps__tabs {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    margin-bottom: -80px;
+  }
+  .steps .text {
+    max-width: 290px;
+  }
+  .steps__title {
+    font-size: 22px;
+  }
+  .steps__tab p {
+    margin-bottom: 25px;
+  }
+  .steps__content .about {
+    position: relative;
+    top: -100px;
+    max-width: 290px;
+    margin-right: 48px;
+  }
+  .steps__content .about__num {
+    font-size: 18px;
+  }
+  .steps__content .about__title {
+    font-size: 15px;
+  }
+  .steps__content .about__descr {
+    font-size: 15px;
+  }
+  .team .row {
+    -webkit-column-gap: calc(80px - 1.5rem);
+            column-gap: calc(80px - 1.5rem);
+  }
+  .team .row .col {
+    -ms-flex-preferred-size: calc(205px + 1.5rem);
+        flex-basis: calc(205px + 1.5rem);
+  }
+  .reviews {
+    background: #fff url(../images/team/bg.webp) center top;
+  }
+  .reviews .row {
+    -webkit-column-gap: calc(30px - 1.5rem);
+            column-gap: calc(30px - 1.5rem);
+  }
+  .reviews .row .col {
+    -ms-flex-preferred-size: calc(273px + 1.5rem);
+        flex-basis: calc(273px + 1.5rem);
+  }
+  .reviews .card-body {
+    padding: 11px 32px 55px 20px;
+  }
+  .reviews .card-title {
+    font-size: 16px;
+  }
+  .reviews .card .btn {
+    display: block;
+    width: 78%;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  .reviews .card .btn:focus {
+    outline: none;
+  }
+  .question__form {
+    padding: 35px 55px;
+    max-width: 550px;
+  }
+  .question__form .label {
+    min-width: 150px;
+  }
+  .contact .map {
+    margin: 0 auto;
+    max-width: 525px;
+    height: 355px;
+  }
+  .footer .navbar {
+    padding: 29px 5px 27px 42px;
+  }
+  .footer .navbar-brand {
+    display: none;
+  }
+  .footer .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .navbar-nav .btn {
+    display: none;
+  }
+  .footer .navbar-nav .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .vector-bg__first {
+    background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
+  }
+  .vector-bg__third {
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 440px/100% 61.1% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 440px/100% 61.1% no-repeat;
+  }
+  .header .navbar {
+    max-width: calc(720px - 1.5rem);
+    padding: 24px 40px 22px 42px;
+  }
+  .header .navbar-brand {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .header .navbar-nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .home {
+    padding-top: 80px;
+  }
+  .home .wrapper {
+    margin-left: 50px;
+    max-width: 514px;
+  }
+  .home__title {
+    font-size: 35px;
+  }
+  .home__descr {
+    font-size: 18px;
+  }
+  .home__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home__form .btn {
+    display: block;
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "FuturaDemiC", sans-serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+  }
+  .home__form .btn:focus {
+    outline: none;
+  }
+  .home__link {
+    width: 42px;
+  }
+  .completed-projects {
+    padding: 107px 40px 0 42px;
+  }
+  .completed-projects__caption {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .completed-projects__tab {
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .completed-projects__content_active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .completed-projects__about {
+    max-width: 100%;
+    margin-right: 0;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .completed-projects__title {
+    margin-bottom: 24px;
+  }
+  .completed-projects__descr {
+    font-size: 15px;
+    margin-right: 30px;
+  }
+  .completed-projects .row .col .wrapper {
+    margin-top: 0;
+  }
+  .completed-projects .row .col .wrapper span {
+    font-size: 15px;
+  }
+  .completed-projects .owl-carousel {
+    margin-top: 30px;
+    width: calc(100%);
+    position: relative;
+  }
+  .completed-projects .owl-carousel .owl-nav .owl-prev {
+    bottom: -55px;
+    left: calc(50% - 87px);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .completed-projects .owl-carousel .owl-nav .owl-next {
+    bottom: -55px;
+    left: calc(50% + 87px);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .completed-projects .owl-carousel .owl-dots {
+    bottom: -62px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .online-control {
+    margin-top: 150px;
+  }
+  .online-control__title {
+    color: #181818;
+  }
+  .online-control__video-bg {
+    max-width: 550px;
+  }
+  .online-control__video-btn {
+    height: 55px;
+    width: 55px;
+    background: url(../images/online-control/video-btn.svg) center -40px/145px;
+  }
+  .online-control__descr {
+    max-width: 533px;
+    font-size: 16px;
+  }
+  .registration__form {
+    max-width: 550px;
+  }
+  .registration__form .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .types .row .col {
+    -ms-flex-preferred-size: calc(272px + 1.5rem);
+        flex-basis: calc(272px + 1.5rem);
+  }
+  .types .row .col .card-title {
+    font-size: 16px;
+  }
+  .types .row .col .card-text {
+    font-size: 13px;
+  }
+  .types .row .col .card .btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    bottom: -20px;
+  }
+  .types .row .col .card .btn:focus {
+    outline: none;
+  }
+  .request {
+    padding: 0 0 80px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .request__bg {
+    display: none;
+  }
+  .request__form {
+    margin: 0 auto;
+  }
+  .request .saveMoney {
+    margin: 30px auto 0;
+  }
+  .fantasies__bg {
+    padding: 117px 40px 96px 82px;
+  }
+  .fantasies__title {
+    font-size: 23px;
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+  }
+  .fantasies__content {
+    width: calc(100% - 210px);
+  }
+  .fantasies__content .row .col:nth-of-type(2) {
+    display: none;
+  }
+  .fantasies__content .row .col .wrapper-left {
+    top: 10px;
+  }
+  .project {
+    padding: 70px 40px 0 42px;
+  }
+  .project__descr {
+    font-size: 18px;
+  }
+  .project .row .col {
+    -ms-flex-preferred-size: calc(272px + 1.5rem);
+        flex-basis: calc(272px + 1.5rem);
+  }
+  .project .row .col .card-body {
+    padding: 15px 1.5rem;
+    top: -107px;
+  }
+  .project .row .col .card-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .project .row .col .card-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .project .row .col .card .btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    bottom: -20px;
+  }
+  .project .row .col .card .btn:focus {
+    outline: none;
+  }
+  .steps {
+    padding: 0 40px 0 42px;
+  }
+  .steps__tabs {
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    margin-bottom: -80px;
+  }
+  .steps .text {
+    max-width: 290px;
+  }
+  .steps__title {
+    font-size: 22px;
+  }
+  .steps__tab p {
+    margin-bottom: 25px;
+  }
+  .steps__content .about {
+    position: relative;
+    top: -100px;
+    max-width: 290px;
+    margin-right: 48px;
+  }
+  .steps__content .about__num {
+    font-size: 18px;
+  }
+  .steps__content .about__title {
+    font-size: 15px;
+  }
+  .steps__content .about__descr {
+    font-size: 15px;
+  }
+  .team .row {
+    -webkit-column-gap: calc(80px - 1.5rem);
+            column-gap: calc(80px - 1.5rem);
+  }
+  .team .row .col {
+    -ms-flex-preferred-size: calc(205px + 1.5rem);
+        flex-basis: calc(205px + 1.5rem);
+  }
+  .reviews {
+    background: #fff url(../images/team/bg.webp) center top;
+  }
+  .reviews .row {
+    -webkit-column-gap: calc(30px - 1.5rem);
+            column-gap: calc(30px - 1.5rem);
+  }
+  .reviews .row .col {
+    -ms-flex-preferred-size: calc(273px + 1.5rem);
+        flex-basis: calc(273px + 1.5rem);
+  }
+  .reviews .card-body {
+    padding: 11px 32px 55px 20px;
+  }
+  .reviews .card-title {
+    font-size: 16px;
+  }
+  .reviews .card .btn {
+    display: block;
+    width: 78%;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Yeseva One", serif;
+    background: #E3B873;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  .reviews .card .btn:focus {
+    outline: none;
+  }
+  .question__form {
+    padding: 35px 55px;
+    max-width: 550px;
+  }
+  .question__form .label {
+    min-width: 150px;
+  }
+  .contact .map {
+    margin: 0 auto;
+    max-width: 525px;
+    height: 355px;
+  }
+  .footer .navbar {
+    padding: 29px 5px 27px 42px;
+  }
+  .footer .navbar-brand {
+    display: none;
+  }
+  .footer .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .navbar-nav .btn {
+    display: none;
+  }
+  .footer .navbar-nav .nav-link {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
