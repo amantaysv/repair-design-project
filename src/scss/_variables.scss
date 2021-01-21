@@ -123,3 +123,60 @@ sans-serif;
         border-radius: 2px;
     }
 }
+
+@mixin burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+
+    &.active {
+        .fantasies-burger__line {
+            background: none;
+
+            &::before {
+                transform: rotate(135deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(45deg);
+                bottom: 0;
+            }
+        }
+    }
+
+    &__line {
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background: $yellow;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $yellow;
+            top: 8px;
+            left: 0;
+            transition: .25s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $yellow;
+            bottom: 8px;
+            left: 0;
+            transition: .25s;
+        }
+    }
+}

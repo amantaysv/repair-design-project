@@ -14,8 +14,8 @@ $(document).ready(function () {
 
 $('ul.completed-projects__caption').on('click', 'li:not(.completed-projects__tab_active)', function () {
   $(this)
-  .addClass('completed-projects__tab_active').siblings().removeClass('completed-projects__tab_active')
-  .closest('div.completed-projects__tabs').find('div.completed-projects__content').removeClass('completed-projects__content_active').eq($(this).index()).addClass('completed-projects__content_active');
+    .addClass('completed-projects__tab_active').siblings().removeClass('completed-projects__tab_active')
+    .closest('div.completed-projects__tabs').find('div.completed-projects__content').removeClass('completed-projects__content_active').eq($(this).index()).addClass('completed-projects__content_active');
 });
 
 $('ul.fantasies__caption').on('click', 'li:not(.fantasies__tab_active)', function () {
@@ -32,4 +32,10 @@ $('div.steps__caption').on('click', 'div:not(.steps__tab_active)', function () {
 
 $('[data-mdb-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
-  }); 
+});
+
+
+document.querySelector('.fantasies-burger').addEventListener('click', function () {
+  document.querySelector('.fantasies-burger').classList.toggle('active');
+  document.querySelector('.fantasies__caption').classList.toggle('active');
+});

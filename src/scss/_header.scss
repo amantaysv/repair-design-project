@@ -20,7 +20,11 @@
         }
 
         &-toggler {
+            padding: 0;
+
             &.collapsed {
+                padding: 0;
+
                 .burger__line {
                     background: $yellow;
 
@@ -84,6 +88,7 @@
         &-nav {
             font-family: $fbc;
             align-items: center;
+
             .nav-link {
                 color: #fff;
                 font-size: 14px;
