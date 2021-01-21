@@ -47,29 +47,18 @@
 
     .online-control {
         &__video-bg {
-            margin: 30px auto 0;
             max-width: 670px;
-
-            .mask {
-                background: rgba(0, 0, 0, 0.8);
-            }
-        }
-
-        &__descr {
-            position: relative;
         }
     }
 
     .types {
         .row {
-
             .col {
                 flex-basis: calc(322px + 1.5rem);
 
                 .card {
-
                     .btn {
-                        @include btn (228px, 54px, 15px, $yo);
+                        font-size: 15px;
                     }
                 }
             }
@@ -122,24 +111,13 @@
         padding-top: 70px;
 
         .row {
-
             .col {
                 flex-basis: calc(322px + 1.5rem);
 
                 .card {
-
-                    &-title {
-                        font-size: 18px;
-                        line-height: 21px;
-                    }
-
-                    &-text {
-                        font-size: 15px;
-                        line-height: 20px;
-                    }
-
                     .btn {
-                        @include btn (70%, 54px, 15px, $yo);
+                        width: 80%;
+                        font-size: 15px;
                     }
                 }
             }
@@ -147,14 +125,13 @@
     }
 
     .steps {
-        padding: 0 40px 0 82px;
+        padding-right: 40px;
 
         &__tabs {
             column-gap: 80px;
         }
 
         &__content {
-
             .about {
                 margin-right: 80px;
 
@@ -194,12 +171,12 @@
 
         .card {
             &-body {
-                padding: 11px 32px 55px 20px;
+                padding-right: 20px;
             }
 
             .btn {
-                @include btn(78%, 54px, 15px, $yo);
-                display: flex;
+                width: 80%;
+                font-size: 15px;
             }
         }
     }
@@ -213,9 +190,7 @@
 
     .contact {
         .map {
-            margin: 0 auto;
             max-width: 725px;
-            height: 465px;
         }
     }
 
@@ -242,7 +217,6 @@
             max-width: calc(960px - 1.5rem);
             padding: 24px 40px 22px 82px;
 
-
             &-brand {
                 font-size: 12px;
                 margin-right: 30px;
@@ -253,13 +227,14 @@
             }
 
             &-nav {
-
                 .nav-link {
                     font-size: 12px;
                 }
 
                 .btn {
-                    @include btn(141px, 30px, 11px, $fdc);
+                    width: 141px;
+                    height: 30px;
+                    font-size: 11px;
                 }
             }
         }
@@ -270,7 +245,6 @@
 
         .wrapper {
             margin-left: 50px;
-            max-width: 514px;
         }
 
         &__title {
@@ -282,19 +256,16 @@
         }
 
         &__form {
-            display: flex;
-
             .btn {
-                @include btn(180px, 48px, 13px, $fdc);
+                width: 180px;
+                height: 48px;
                 margin-right: 30px;
-                border: 1px solid #fff;
-                background: transparent;
             }
         }
     }
 
     .completed-projects {
-        padding: 107px 40px 0 82px;
+        padding-right: 40px;
 
         &__about {
             max-width: 320px;
@@ -315,7 +286,6 @@
             .col {
                 .wrapper {
                     margin-top: 24px;
-                    font-size: 15px;
 
                     span {
                         font-size: 15px;
@@ -329,7 +299,6 @@
             position: relative;
 
             .owl-nav {
-
                 .owl-prev {
                     top: 338px;
                     left: calc(50% - 87px);
@@ -341,7 +310,6 @@
                     left: calc(50% + 87px);
                     transform: translate(-50%);
                 }
-
             }
 
             .owl-dots {
@@ -384,7 +352,9 @@
                     }
 
                     .btn {
-                        @include btn (70%, 40px, 14px, $yo);
+                        width: 70%;
+                        height: 40px;
+                        font-size: 14px;
                         bottom: -20px;
                     }
                 }
@@ -414,20 +384,10 @@
             padding: 117px 40px 96px 82px;
         }
 
-        &__title {
-            font-size: 27px;
-            font-family: $yo;
-            color: $yellow;
-            line-height: 37px;
-            text-transform: uppercase;
-            margin-bottom: 47px;
-        }
-
         &__content {
             width: calc(100% - 310px);
 
             .row {
-
                 .col {
                     &:nth-of-type(2) {
                         display: none;
@@ -462,16 +422,16 @@
 
                     &-title {
                         font-size: 16px;
-                        line-height: 21px;
                     }
 
                     &-text {
                         font-size: 14px;
-                        line-height: 20px;
                     }
 
                     .btn {
-                        @include btn (70%, 40px, 12px, $yo);
+                        width: 70%;
+                        height: 40px;
+                        font-size: 12px;
                         bottom: -20px;
                     }
                 }
@@ -480,7 +440,7 @@
     }
 
     .steps {
-        padding: 0 40px 0 82px;
+        padding-right: 40px;
 
         &__tabs {
             column-gap: 48px;
@@ -549,7 +509,8 @@
             }
 
             .btn {
-                @include btn(78%, 54px, 15px, $yo);
+                width: 80%;
+                font-size: 15px;
             }
         }
     }
@@ -567,7 +528,6 @@
 
     .contact {
         .map {
-            margin: 0 auto;
             max-width: 625px;
             height: 355px;
         }
@@ -635,7 +595,6 @@
 
         .wrapper {
             margin-left: 50px;
-            max-width: 514px;
         }
 
         &__title {
@@ -647,13 +606,11 @@
         }
 
         &__form {
-            display: flex;
 
             .btn {
-                @include btn(180px, 48px, 13px, $fdc);
+                width: 180px;
+                height: 48px;
                 margin-right: 30px;
-                border: 1px solid #fff;
-                background: transparent;
             }
         }
 
@@ -710,7 +667,7 @@
 
         .owl-carousel {
             margin-top: 30px;
-            width: calc(100%);
+            width: 100%;
             position: relative;
 
             .owl-nav {
@@ -815,11 +772,6 @@
 
         &__title {
             font-size: 23px;
-            font-family: $yo;
-            color: $yellow;
-            line-height: 37px;
-            text-transform: uppercase;
-            margin-bottom: 47px;
         }
 
         &__content {
@@ -860,12 +812,10 @@
 
                     &-title {
                         font-size: 16px;
-                        line-height: 21px;
                     }
 
                     &-text {
                         font-size: 14px;
-                        line-height: 20px;
                     }
 
                     .btn {
@@ -1356,7 +1306,6 @@
             &-nav {
                 flex-direction: row;
 
-
                 .btn {
                     display: none;
                 }
@@ -1434,7 +1383,6 @@
             align-items: center;
 
             .btn {
-
                 margin-right: 0;
                 margin-bottom: 50px;
                 border: 1px solid #fff;
@@ -1832,7 +1780,6 @@
 
             &-nav {
                 flex-direction: row;
-
 
                 .btn {
                     display: none;

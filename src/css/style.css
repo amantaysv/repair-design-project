@@ -2019,35 +2019,14 @@ body {
     width: calc(100% - 390px);
   }
   .online-control__video-bg {
-    margin: 30px auto 0;
     max-width: 670px;
-  }
-  .online-control__video-bg .mask {
-    background: rgba(0, 0, 0, 0.8);
-  }
-  .online-control__descr {
-    position: relative;
   }
   .types .row .col {
     -ms-flex-preferred-size: calc(322px + 1.5rem);
         flex-basis: calc(322px + 1.5rem);
   }
   .types .row .col .card .btn {
-    display: block;
-    width: 228px;
-    height: 54px;
-    line-height: 54px;
-    color: #fff;
     font-size: 15px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-  }
-  .types .row .col .card .btn:focus {
-    outline: none;
   }
   .request {
     padding: 0 0 80px 0;
@@ -2084,33 +2063,12 @@ body {
     -ms-flex-preferred-size: calc(322px + 1.5rem);
         flex-basis: calc(322px + 1.5rem);
   }
-  .project .row .col .card-title {
-    font-size: 18px;
-    line-height: 21px;
-  }
-  .project .row .col .card-text {
-    font-size: 15px;
-    line-height: 20px;
-  }
   .project .row .col .card .btn {
-    display: block;
-    width: 70%;
-    height: 54px;
-    line-height: 54px;
-    color: #fff;
+    width: 80%;
     font-size: 15px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-  }
-  .project .row .col .card .btn:focus {
-    outline: none;
   }
   .steps {
-    padding: 0 40px 0 82px;
+    padding-right: 40px;
   }
   .steps__tabs {
     -webkit-column-gap: 80px;
@@ -2145,36 +2103,18 @@ body {
         flex-basis: calc(322px + 1.5rem);
   }
   .reviews .card-body {
-    padding: 11px 32px 55px 20px;
+    padding-right: 20px;
   }
   .reviews .card .btn {
-    display: block;
-    width: 78%;
-    height: 54px;
-    line-height: 54px;
-    color: #fff;
+    width: 80%;
     font-size: 15px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .reviews .card .btn:focus {
-    outline: none;
   }
   .question__form {
     padding: 35px 75px;
     max-width: 669px;
   }
   .contact .map {
-    margin: 0 auto;
     max-width: 725px;
-    height: 465px;
   }
   .footer .navbar {
     padding: 49px 40px 47px 82px;
@@ -2204,28 +2144,15 @@ body {
     font-size: 12px;
   }
   .header .navbar-nav .btn {
-    display: block;
     width: 141px;
     height: 30px;
-    line-height: 30px;
-    color: #fff;
     font-size: 11px;
-    font-family: "FuturaDemiC", sans-serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-  }
-  .header .navbar-nav .btn:focus {
-    outline: none;
   }
   .home {
     padding-top: 81px;
   }
   .home .wrapper {
     margin-left: 50px;
-    max-width: 514px;
   }
   .home__title {
     font-size: 35px;
@@ -2233,33 +2160,13 @@ body {
   .home__descr {
     font-size: 18px;
   }
-  .home__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .home__form .btn {
-    display: block;
     width: 180px;
     height: 48px;
-    line-height: 48px;
-    color: #fff;
-    font-size: 13px;
-    font-family: "FuturaDemiC", sans-serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
     margin-right: 30px;
-    border: 1px solid #fff;
-    background: transparent;
-  }
-  .home__form .btn:focus {
-    outline: none;
   }
   .completed-projects {
-    padding: 107px 40px 0 82px;
+    padding-right: 40px;
   }
   .completed-projects__about {
     max-width: 320px;
@@ -2275,7 +2182,6 @@ body {
   }
   .completed-projects .row .col .wrapper {
     margin-top: 24px;
-    font-size: 15px;
   }
   .completed-projects .row .col .wrapper span {
     font-size: 15px;
@@ -2325,22 +2231,10 @@ body {
     font-size: 13px;
   }
   .types .row .col .card .btn {
-    display: block;
     width: 70%;
     height: 40px;
-    line-height: 40px;
-    color: #fff;
     font-size: 14px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
     bottom: -20px;
-  }
-  .types .row .col .card .btn:focus {
-    outline: none;
   }
   .request {
     padding: 0 0 80px 0;
@@ -2360,14 +2254,6 @@ body {
   }
   .fantasies__bg {
     padding: 117px 40px 96px 82px;
-  }
-  .fantasies__title {
-    font-size: 27px;
-    font-family: "Yeseva One", serif;
-    color: #E3B873;
-    line-height: 37px;
-    text-transform: uppercase;
-    margin-bottom: 47px;
   }
   .fantasies__content {
     width: calc(100% - 310px);
@@ -2394,32 +2280,18 @@ body {
   }
   .project .row .col .card-title {
     font-size: 16px;
-    line-height: 21px;
   }
   .project .row .col .card-text {
     font-size: 14px;
-    line-height: 20px;
   }
   .project .row .col .card .btn {
-    display: block;
     width: 70%;
     height: 40px;
-    line-height: 40px;
-    color: #fff;
     font-size: 12px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
     bottom: -20px;
   }
-  .project .row .col .card .btn:focus {
-    outline: none;
-  }
   .steps {
-    padding: 0 40px 0 82px;
+    padding-right: 40px;
   }
   .steps__tabs {
     -webkit-column-gap: 48px;
@@ -2470,21 +2342,8 @@ body {
     font-size: 16px;
   }
   .reviews .card .btn {
-    display: block;
-    width: 78%;
-    height: 54px;
-    line-height: 54px;
-    color: #fff;
+    width: 80%;
     font-size: 15px;
-    font-family: "Yeseva One", serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-  }
-  .reviews .card .btn:focus {
-    outline: none;
   }
   .question__form {
     padding: 35px 55px;
@@ -2494,7 +2353,6 @@ body {
     min-width: 150px;
   }
   .contact .map {
-    margin: 0 auto;
     max-width: 625px;
     height: 355px;
   }
@@ -2559,7 +2417,6 @@ body {
   }
   .home .wrapper {
     margin-left: 50px;
-    max-width: 514px;
   }
   .home__title {
     font-size: 35px;
@@ -2567,30 +2424,10 @@ body {
   .home__descr {
     font-size: 18px;
   }
-  .home__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .home__form .btn {
-    display: block;
     width: 180px;
     height: 48px;
-    line-height: 48px;
-    color: #fff;
-    font-size: 13px;
-    font-family: "FuturaDemiC", sans-serif;
-    background: #E3B873;
-    border: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
     margin-right: 30px;
-    border: 1px solid #fff;
-    background: transparent;
-  }
-  .home__form .btn:focus {
-    outline: none;
   }
   .home__link {
     width: 42px;
@@ -2638,7 +2475,7 @@ body {
   }
   .completed-projects .owl-carousel {
     margin-top: 30px;
-    width: calc(100%);
+    width: 100%;
     position: relative;
   }
   .completed-projects .owl-carousel .owl-nav .owl-prev {
@@ -2733,11 +2570,6 @@ body {
   }
   .fantasies__title {
     font-size: 23px;
-    font-family: "Yeseva One", serif;
-    color: #E3B873;
-    line-height: 37px;
-    text-transform: uppercase;
-    margin-bottom: 47px;
   }
   .fantasies__content {
     width: calc(100% - 210px);
@@ -2764,11 +2596,9 @@ body {
   }
   .project .row .col .card-title {
     font-size: 16px;
-    line-height: 21px;
   }
   .project .row .col .card-text {
     font-size: 14px;
-    line-height: 20px;
   }
   .project .row .col .card .btn {
     display: block;
