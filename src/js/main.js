@@ -34,8 +34,12 @@ $('[data-mdb-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 });
 
-
 document.querySelector('.fantasies-burger').addEventListener('click', function () {
   document.querySelector('.fantasies-burger').classList.toggle('active');
   document.querySelector('.fantasies__caption').classList.toggle('active');
+});
+
+document.querySelector('.completed-projects-burger').addEventListener('click', function () {
+  document.querySelector('.completed-projects-burger').classList.toggle('active');
+  document.querySelector('.completed-projects__caption').classList.toggle('active');
 });

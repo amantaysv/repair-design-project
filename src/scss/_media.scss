@@ -606,7 +606,7 @@
         }
 
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.7% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.4% no-repeat;
         }
     }
 
@@ -1240,6 +1240,22 @@
 
         &-burger {
             @include burger;
+
+            &.active {
+                .fantasies-burger__line {
+                    background: none;
+
+                    &::before {
+                        transform: rotate(135deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(45deg);
+                        bottom: 0;
+                    }
+                }
+            }
         }
 
         &__content {
@@ -1318,6 +1334,10 @@
     }
 
     .contact {
+        &__bg {
+            background: #fff url(../images/contact/bg.webp)center center;
+        }
+
         .map {
             margin: 0 auto;
             max-width: 525px;
@@ -1353,20 +1373,21 @@
     .container {
         padding: 0;
     }
+
     .vector-bg {
         &__first {
-            background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
+            background: #fff url(../images/vector-bg/first.webp) center -280px no-repeat;
         }
 
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 1875px/100% 37.5% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 1552px/100% 41.6% no-repeat;
         }
     }
 
     .header {
         .navbar {
-            max-width: calc(100% - 1.5rem);
-            padding: 24px 20px 22px 22px;
+            max-width: 100%;
+            padding: 24px 20px 22px 42px;
 
             &-brand {
                 font-size: 16px;
@@ -1387,7 +1408,7 @@
         padding-top: 80px;
 
         &__bg {
-            padding: 140px 20px 200px 42px;
+            padding: 120px 20px 100px 62px;
             background: #131313 url(../images/home/bg.webp) center top/cover no-repeat;
         }
 
@@ -1396,23 +1417,26 @@
         }
 
         &__title {
-            font-size: 30px;
+            font-size: 22px;
             text-align: center;
             margin-bottom: 45px;
         }
 
         &__descr {
-            font-size: 22px;
+            font-size: 18px;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
         }
 
         &__form {
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
             .btn {
-                @include btn(180px, 48px, 13px, $fdc);
-                margin-right: 30px;
+
+                margin-right: 0;
+                margin-bottom: 50px;
                 border: 1px solid #fff;
                 background: transparent;
             }
@@ -1424,17 +1448,64 @@
     }
 
     .completed-projects {
-        padding: 107px 40px 0 42px;
+        padding: 85px 40px 85px 42px;
+        position: relative;
+        overflow: hidden;
 
         &__caption {
-            justify-content: space-evenly;
             margin-bottom: 20px;
+        }
+
+        &__caption {
+            position: absolute;
+            top: 200px;
+            right: -100%;
+            padding: 24px 0 0 42px;
+            width: 80%;
+            height: 280px;
+            background: #131313e6;
+            flex-direction: column;
+            justify-content: space-evenly;
+            transition: .5s;
+            z-index: 3;
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &-burger {
+            @include burger;
+            top: 94px;
+
+            &.active {
+                .completed-projects-burger__line {
+                    background: none;
+
+                    &::before {
+                        transform: rotate(135deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(45deg);
+                        bottom: 0;
+                    }
+                }
+            }
         }
 
         &__tab {
             margin-right: 0;
             justify-content: center;
             margin-bottom: 20px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 15px;
+
+            &_active {
+                color: $yellow;
+                border-bottom: 1px solid $yellow;
+            }
         }
 
         &__content {
@@ -1448,6 +1519,7 @@
             margin-right: 0;
             padding-bottom: 0;
             display: flex;
+            flex-direction: column;
         }
 
         &__title {
@@ -1502,14 +1574,14 @@
     }
 
     .online-control {
-        margin-top: 150px;
+        margin-top: 50px;
 
         &__title {
             color: #181818;
         }
 
         &__video-bg {
-            max-width: 80%;
+            max-width: 90%;
         }
 
         &__video-btn {
@@ -1519,7 +1591,7 @@
         }
 
         &__descr {
-            max-width: 80%;
+            max-width: 90%;
             font-size: 16px;
         }
     }
@@ -1535,6 +1607,8 @@
     }
 
     .types {
+        padding: 100px 40px 0 42px;
+
         .row {
             .col {
                 margin-bottom: -50px;
@@ -1543,7 +1617,7 @@
     }
 
     .request {
-        padding: 0 40px 80px 42px;
+        padding: 0 20px 80px 22px;
         flex-direction: column;
 
         &__bg {
@@ -1552,6 +1626,18 @@
 
         &__form {
             margin: 0 auto;
+            max-height: 100%;
+            padding: 28px 40px 27px;
+
+            .label {
+                margin-top: 39px;
+            }
+
+            .btn {
+                @include btn(100%, 51px, 13px, $fdc);
+                margin: 39px 0 0 0;
+                border-radius: 0;
+            }
         }
 
         .saveMoney {
@@ -1573,10 +1659,10 @@
 
         &__caption {
             position: absolute;
-            top: 101px;
+            top: 85px;
             right: -100%;
             padding: 24px 0 0 42px;
-            width: 50%;
+            width: 70%;
             height: auto;
             background: #131313e6;
             flex-direction: column;
@@ -1584,6 +1670,7 @@
             align-items: center;
             transition: .5s;
             z-index: 3;
+            font-size: 19px;
 
             &.active {
                 right: 0;
@@ -1592,6 +1679,26 @@
 
         &-burger {
             @include burger;
+
+            &.active {
+                .fantasies-burger__line {
+                    background: none;
+
+                    &::before {
+                        transform: rotate(135deg);
+                        top: 0;
+                    }
+
+                    &::after {
+                        transform: rotate(45deg);
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__tab {
+            margin-bottom: 15px;
         }
 
         &__content {
@@ -1620,6 +1727,19 @@
 
         &__descr {
             font-size: 18px;
+        }
+
+        .row {
+            .col {
+                flex-basis: calc(392px + 1.5rem);
+                margin-bottom: -30px;
+
+                .card {
+                    .btn {
+                        @include btn (80%, 54px, 16px, $yo);
+                    }
+                }
+            }
         }
     }
 
@@ -1656,11 +1776,28 @@
         padding-right: 40px;
     }
 
+    .reviews {
+        padding: 103px 40px 0 42px;
+
+        .card {
+            .btn {
+                @include btn(100%, 54px, 17px, $yo);
+                display: flex;
+
+                .line {
+                    width: 1px;
+                    height: 100%;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
     .question {
-        padding: 120px 40px 0 42px;
+        padding: 120px 20px 0 22px;
 
         &__form {
-            padding: 35px 55px;
+            padding: 35px 40px;
             max-width: 550px;
 
             .label {
@@ -1675,11 +1812,19 @@
             max-width: 525px;
             height: 355px;
         }
+
+        &__title {
+            padding: 0 20px 0 22px;
+        }
     }
 
     .footer {
         .navbar {
-            padding: 29px 5px 27px 42px;
+            padding: 29px 5px 27px 15px;
+
+            .hidden {
+                display: none;
+            }
 
             &-brand {
                 display: none;

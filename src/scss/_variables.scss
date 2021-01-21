@@ -135,21 +135,7 @@ sans-serif;
     cursor: pointer;
     z-index: 3;
 
-    &.active {
-        .fantasies-burger__line {
-            background: none;
-
-            &::before {
-                transform: rotate(135deg);
-                top: 0;
-            }
-
-            &::after {
-                transform: rotate(45deg);
-                bottom: 0;
-            }
-        }
-    }
+    
 
     &__line {
         position: relative;
