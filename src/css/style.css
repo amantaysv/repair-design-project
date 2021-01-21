@@ -3153,6 +3153,9 @@ body {
   .home__link {
     width: 42px;
   }
+  .home__link p {
+    top: 300px;
+  }
   .completed-projects {
     padding: 85px 40px 85px 42px;
     position: relative;
