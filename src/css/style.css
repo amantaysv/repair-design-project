@@ -3131,7 +3131,7 @@ body {
   }
   .home__bg {
     padding: 120px 20px 100px 62px;
-    background: #131313 url(../images/home/bg.webp) center top/cover no-repeat;
+    background: #131313 url(../images/home/bg-mobile.webp) center top/cover no-repeat;
   }
   .home .wrapper {
     margin-left: 0;
