@@ -21,8 +21,7 @@ body {
   overflow: visible;
 }
 
-.container-fluid {
-  max-width: 1440px;
+.container {
   padding: 0;
 }
 
@@ -50,14 +49,6 @@ body {
   color: #E3B873;
 }
 
-.header .navbar-toggler {
-  padding: 0;
-}
-
-.header .navbar-toggler.collapsed {
-  padding: 0;
-}
-
 .header .navbar-toggler.collapsed .burger__line {
   background: #E3B873;
 }
@@ -75,14 +66,8 @@ body {
 }
 
 .header .navbar-toggler .burger {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 26px;
   width: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header .navbar-toggler .burger__line {
@@ -93,15 +78,15 @@ body {
 }
 
 .header .navbar-toggler .burger__line::before {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  top: 0;
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #E3B873;
+  top: 0;
   left: 0;
+  background: #E3B873;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
   -webkit-transition: .25s;
   transition: .25s;
 }
@@ -111,13 +96,13 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #E3B873;
+  bottom: 0;
   left: 0;
-  -webkit-transition: .25s;
-  transition: .25s;
+  background: #E3B873;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  bottom: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
 }
 
 .header .navbar-collapse {
@@ -187,7 +172,7 @@ body {
 
 .home__title {
   font-family: "Yeseva One", serif;
-  color: #ffffff;
+  color: #fff;
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 19px;
@@ -202,12 +187,6 @@ body {
   color: #ffffff;
   font-size: 22px;
   margin-bottom: 41px;
-}
-
-.home__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .home__form .btn {
@@ -402,6 +381,10 @@ body {
   margin-bottom: 8px;
 }
 
+.completed-projects .row .col {
+  padding: 0;
+}
+
 .completed-projects .row .col .wrapper {
   margin-top: 34px;
   font-family: "FuturaBookC", sans-serif;
@@ -446,6 +429,13 @@ body {
 
 .completed-projects .owl-carousel .owl-nav .owl-next:hover {
   background: none;
+}
+
+.completed-projects .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 72px;
+  margin: 0;
 }
 
 .online-control {
@@ -1342,6 +1332,10 @@ body {
   color: #fff;
 }
 
+.steps__tab {
+  padding: 0;
+}
+
 .steps__tab span {
   font-size: 15px;
   font-family: "Yeseva One", serif;
@@ -1454,10 +1448,11 @@ body {
 }
 
 .team__subtitle {
+  max-width: 450px;
   font-size: 20px;
   text-align: center;
   color: #fff;
-  margin: 24px 0 70px;
+  margin: 24px auto 70px;
   font-family: "FuturaBookC", sans-serif;
 }
 
@@ -1976,11 +1971,11 @@ body {
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .vector-bg__third {
-    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 482px/100% 64% no-repeat;
-    background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 64% no-repeat;
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 482px/100% 65.2% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 65.2% no-repeat;
   }
   .header .navbar {
-    max-width: 100%;
+    max-width: 1140px;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2011,6 +2006,9 @@ body {
   }
   .completed-projects {
     padding: 107px 40px 0 82px;
+  }
+  .completed-projects__tab:last-child {
+    margin-right: 10px;
   }
   .completed-projects__about {
     max-width: 350px;
@@ -2124,14 +2122,14 @@ body {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .vector-bg__first {
-    background: #fff url(../images/vector-bg/first.webp) center -205px no-repeat;
+    background: #fff url(../images/vector-bg/first.webp) center -180px no-repeat;
   }
   .vector-bg__third {
-    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 447px/100% 63.4% no-repeat;
-    background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 63.4% no-repeat;
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 447px/100% 65% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 65% no-repeat;
   }
   .header .navbar {
-    max-width: 100%;
+    max-width: 960px;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2169,10 +2167,18 @@ body {
   .completed-projects {
     padding-right: 40px;
   }
+  .completed-projects__caption {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .completed-projects__tab:last-child {
+    margin-right: 0;
+  }
   .completed-projects__about {
     max-width: 320px;
     margin-right: 30px;
-    padding-bottom: 0;
+    padding: 0;
   }
   .completed-projects__title {
     font-size: 24px;
@@ -2192,19 +2198,19 @@ body {
     position: relative;
   }
   .completed-projects .owl-carousel .owl-nav .owl-prev {
-    top: 338px;
+    top: 348px;
     left: calc(50% - 87px);
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
   }
   .completed-projects .owl-carousel .owl-nav .owl-next {
-    top: 338px;
+    top: 348px;
     left: calc(50% + 87px);
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
   }
   .completed-projects .owl-carousel .owl-dots {
-    top: 330px;
+    top: 340px;
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
@@ -2394,11 +2400,11 @@ body {
     background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
   }
   .vector-bg__third {
-    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 947px/100% 44.4% no-repeat;
-    background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.4% no-repeat;
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 960px/100% 44.9% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 960px/100% 44.9% no-repeat;
   }
   .header .navbar {
-    max-width: 100%;
+    max-width: 720px;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
@@ -2417,7 +2423,7 @@ body {
     padding-top: 80px;
   }
   .home .wrapper {
-    margin-left: 50px;
+    margin-left: 0;
   }
   .home__title {
     font-size: 35px;
@@ -2438,7 +2444,8 @@ body {
     left: -50%;
   }
   .completed-projects {
-    padding: 107px 40px 0 42px;
+    padding: 107px 40px 100px 42px;
+    background: url(../images/vector-bg/first.webp) center bottom no-repeat;
   }
   .completed-projects__caption {
     -webkit-box-pack: space-evenly;
@@ -2501,9 +2508,6 @@ body {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
   }
-  .online-control {
-    margin-top: 150px;
-  }
   .online-control__title {
     color: #181818;
   }
@@ -2529,6 +2533,7 @@ body {
   .types .row .col {
     -ms-flex-preferred-size: calc(272px + 1.5rem);
         flex-basis: calc(272px + 1.5rem);
+    margin-bottom: -80px;
   }
   .types .row .col .card-title {
     font-size: 16px;
@@ -2571,7 +2576,7 @@ body {
     margin: 30px auto 0;
   }
   .fantasies__bg {
-    padding: 117px 40px 96px 82px;
+    padding: 117px 40px 96px 42px;
   }
   .fantasies__title {
     font-size: 23px;
@@ -2731,14 +2736,14 @@ body {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .vector-bg__first {
-    background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
+    background: #fff url(../images/vector-bg/first.webp) center -175px no-repeat;
   }
   .vector-bg__third {
     background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 1875px/100% 37.5% no-repeat;
     background: #fff linear-gradient(#fff 0, #131313 0) center 1875px/100% 37.5% no-repeat;
   }
   .header .navbar {
-    max-width: 100%;
+    max-width: 540px;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
@@ -2806,7 +2811,8 @@ body {
     left: -50%;
   }
   .completed-projects {
-    padding: 107px 40px 0 42px;
+    padding: 107px 40px 100px 42px;
+    background: url(../images/vector-bg/first.webp) center bottom no-repeat;
   }
   .completed-projects__caption {
     -webkit-box-pack: space-evenly;
@@ -2828,20 +2834,25 @@ body {
             flex-direction: column;
   }
   .completed-projects__about {
-    max-width: 100%;
     margin-right: 0;
     padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .completed-projects__title {
     max-width: 100%;
-    margin-bottom: 44px;
+    margin-bottom: 20px;
   }
   .completed-projects__descr {
     font-size: 15px;
     margin-right: 30px;
+    width: 360px;
+    margin-bottom: 20px;
   }
   .completed-projects .row {
     width: 100%;
@@ -2875,9 +2886,6 @@ body {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
   }
-  .online-control {
-    margin-top: 150px;
-  }
   .online-control__title {
     color: #181818;
   }
@@ -2897,8 +2905,15 @@ body {
     max-width: 80%;
   }
   .registration__form .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .registration__form .row .btn {
+    width: 231px;
   }
   .types .row .col {
     margin-bottom: -50px;
@@ -2934,7 +2949,7 @@ body {
     top: 84px;
     right: -100%;
     padding: 24px 0 0 42px;
-    width: 50%;
+    width: 60%;
     height: auto;
     background: #131313e6;
     -webkit-box-orient: vertical;
@@ -3099,12 +3114,12 @@ body {
     background: #fff url(../images/vector-bg/first.webp) center -280px no-repeat;
   }
   .vector-bg__third {
-    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 1552px/100% 41.6% no-repeat;
-    background: #fff linear-gradient(#fff 0, #131313 0) center 1552px/100% 41.6% no-repeat;
+    background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 1500px/100% 41.4% no-repeat;
+    background: #fff linear-gradient(#fff 0, #131313 0) center 1500px/100% 41.4% no-repeat;
   }
   .header .navbar {
     max-width: 100%;
-    padding: 24px 20px 22px 42px;
+    padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
     font-size: 16px;
@@ -3167,7 +3182,8 @@ body {
     left: -50%;
   }
   .completed-projects {
-    padding: 85px 40px 85px 42px;
+    background: url(../images/vector-bg/first.webp) center bottom no-repeat;
+    padding: 85px 40px 100px 42px;
     position: relative;
     overflow: hidden;
   }
@@ -3176,10 +3192,10 @@ body {
   }
   .completed-projects__caption {
     position: absolute;
-    top: 200px;
+    top: 170px;
     right: -100%;
     padding: 24px 0 0 42px;
-    width: 80%;
+    width: 70%;
     height: 280px;
     background: #131313e6;
     -webkit-box-orient: vertical;
@@ -3286,14 +3302,16 @@ body {
   }
   .completed-projects__title {
     max-width: 100%;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
   .completed-projects__descr {
     font-size: 15px;
-    margin-right: 30px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 400px;
   }
-  .completed-projects .row {
-    width: 100%;
+  .completed-projects .row .col {
+    margin-bottom: 20px;
   }
   .completed-projects .row .col .wrapper {
     margin-top: 0;
@@ -3302,8 +3320,7 @@ body {
     font-size: 15px;
   }
   .completed-projects .owl-carousel {
-    margin-top: 30px;
-    width: calc(100%);
+    width: 100%;
     position: relative;
   }
   .completed-projects .owl-carousel .owl-nav .owl-prev {
@@ -3348,6 +3365,13 @@ body {
   .registration__form .row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration__form .row .btn {
+    width: 231px;
   }
   .types {
     padding: 100px 40px 0 42px;
@@ -3407,10 +3431,10 @@ body {
   }
   .fantasies__caption {
     position: absolute;
-    top: 85px;
+    top: 84px;
     right: -100%;
     padding: 24px 0 0 42px;
-    width: 70%;
+    width: 60%;
     height: auto;
     background: #131313e6;
     -webkit-box-orient: vertical;

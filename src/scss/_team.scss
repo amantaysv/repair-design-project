@@ -15,10 +15,11 @@
     }
 
     &__subtitle {
+        max-width: 450px;
         font-size: 20px;
         text-align: center;
         color: #fff;
-        margin: 24px 0 70px;
+        margin: 24px auto 70px;
         font-family: $fbc;
     }
 

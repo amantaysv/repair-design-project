@@ -21,7 +21,7 @@
 
     &__title {
         font-family: $yo;
-        color: #ffffff;
+        color: #fff;
         font-size: 40px;
         text-transform: uppercase;
         margin-bottom: 19px;
@@ -39,8 +39,6 @@
     }
 
     &__form {
-        display: flex;
-
         .btn {
             @include btn(207px, 51px, 13px, $fdc);
             border: 1px solid #fff;

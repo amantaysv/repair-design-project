@@ -3,13 +3,13 @@
 @media (min-width:1200px) and (max-width:1439px) {
     .vector-bg {
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 64% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 65.2% no-repeat;
         }
     }
 
     .header {
         .navbar {
-            max-width: 100%;
+            max-width: 1140px;
             padding: 24px 40px 22px 82px;
 
             &-brand {
@@ -34,6 +34,12 @@
 
     .completed-projects {
         padding: 107px 40px 0 82px;
+
+        &__tab {
+            &:last-child {
+                margin-right: 10px;
+            }
+        }
 
         &__about {
             max-width: 350px;
@@ -204,17 +210,17 @@
 @media(min-width:992px) and (max-width: 1199px) {
     .vector-bg {
         &__first {
-            background: #fff url(../images/vector-bg/first.webp) center -205px no-repeat;
+            background: #fff url(../images/vector-bg/first.webp) center -180px no-repeat;
         }
 
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 63.4% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 65% no-repeat;
         }
     }
 
     .header {
         .navbar {
-            max-width: 100%;
+            max-width: 960px;
             padding: 24px 40px 22px 82px;
 
             &-brand {
@@ -267,10 +273,20 @@
     .completed-projects {
         padding-right: 40px;
 
+        &__caption {
+            justify-content: center;
+        }
+
+        &__tab {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
         &__about {
             max-width: 320px;
             margin-right: 30px;
-            padding-bottom: 0;
+            padding: 0;
         }
 
         &__title {
@@ -300,23 +316,24 @@
 
             .owl-nav {
                 .owl-prev {
-                    top: 338px;
+                    top: 348px;
                     left: calc(50% - 87px);
                     transform: translate(-50%);
                 }
 
                 .owl-next {
-                    top: 338px;
+                    top: 348px;
                     left: calc(50% + 87px);
                     transform: translate(-50%);
                 }
             }
 
             .owl-dots {
-                top: 330px;
+                top: 340px;
                 left: 50%;
                 transform: translate(-50%);
             }
+
         }
     }
 
@@ -566,13 +583,13 @@
         }
 
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.4% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 960px/100% 44.9% no-repeat;
         }
     }
 
     .header {
         .navbar {
-            max-width: 100%;
+            max-width: 720px;
             padding: 24px 40px 22px 42px;
 
             &-brand {
@@ -594,7 +611,7 @@
         padding-top: 80px;
 
         .wrapper {
-            margin-left: 50px;
+            margin-left: 0;
         }
 
         &__title {
@@ -625,7 +642,8 @@
     }
 
     .completed-projects {
-        padding: 107px 40px 0 42px;
+        padding: 107px 40px 100px 42px;
+        background: url(../images/vector-bg/first.webp) center bottom no-repeat;
 
         &__caption {
             justify-content: space-evenly;
@@ -698,8 +716,6 @@
     }
 
     .online-control {
-        margin-top: 150px;
-
         &__title {
             color: #181818;
         }
@@ -734,6 +750,7 @@
         .row {
             .col {
                 flex-basis: calc(272px + 1.5rem);
+                margin-bottom: -80px;
 
                 .card {
                     &-title {
@@ -772,7 +789,7 @@
 
     .fantasies {
         &__bg {
-            padding: 117px 40px 96px 82px;
+            padding: 117px 40px 96px 42px;
         }
 
         &__title {
@@ -958,7 +975,7 @@
 @media(min-width:576px) and (max-width: 767px) {
     .vector-bg {
         &__first {
-            background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
+            background: #fff url(../images/vector-bg/first.webp) center -175px no-repeat;
         }
 
         &__third {
@@ -968,7 +985,7 @@
 
     .header {
         .navbar {
-            max-width: 100%;
+            max-width: 540px;
             padding: 24px 40px 22px 42px;
 
             &-brand {
@@ -1032,7 +1049,8 @@
     }
 
     .completed-projects {
-        padding: 107px 40px 0 42px;
+        padding: 107px 40px 100px 42px;
+        background: url(../images/vector-bg/first.webp) center bottom no-repeat;
 
         &__caption {
             justify-content: space-evenly;
@@ -1052,20 +1070,22 @@
         }
 
         &__about {
-            max-width: 100%;
             margin-right: 0;
             padding-bottom: 0;
             display: flex;
+            flex-direction: column;
         }
 
         &__title {
             max-width: 100%;
-            margin-bottom: 44px;
+            margin-bottom: 20px;
         }
 
         &__descr {
             font-size: 15px;
             margin-right: 30px;
+            width: 360px;
+            margin-bottom: 20px;
         }
 
         .row {
@@ -1110,8 +1130,6 @@
     }
 
     .online-control {
-        margin-top: 150px;
-
         &__title {
             color: #181818;
         }
@@ -1137,7 +1155,12 @@
             max-width: 80%;
 
             .row {
+                flex-direction: column;
                 flex-wrap: wrap;
+
+                .btn {
+                    width: 231px;
+                }
             }
         }
     }
@@ -1184,7 +1207,7 @@
             top: 84px;
             right: -100%;
             padding: 24px 0 0 42px;
-            width: 50%;
+            width: 60%;
             height: auto;
             background: #131313e6;
             flex-direction: column;
@@ -1335,7 +1358,7 @@
         }
 
         &__third {
-            background: #fff linear-gradient(#fff 0, #131313 0) center 1552px/100% 41.6% no-repeat;
+            background: #fff linear-gradient(#fff 0, #131313 0) center 1500px/100% 41.4% no-repeat;
         }
     }
 
@@ -1411,7 +1434,8 @@
     }
 
     .completed-projects {
-        padding: 85px 40px 85px 42px;
+        background: url(../images/vector-bg/first.webp) center bottom no-repeat;
+        padding: 85px 40px 100px 42px;
         position: relative;
         overflow: hidden;
 
@@ -1421,10 +1445,10 @@
 
         &__caption {
             position: absolute;
-            top: 200px;
+            top: 170px;
             right: -100%;
             padding: 24px 0 0 42px;
-            width: 80%;
+            width: 70%;
             height: 280px;
             background: #131313e6;
             flex-direction: column;
@@ -1487,18 +1511,20 @@
 
         &__title {
             max-width: 100%;
-            margin-bottom: 44px;
+            margin-bottom: 30px;
         }
 
         &__descr {
             font-size: 15px;
-            margin-right: 30px;
+            margin-right: 0;
+            margin-bottom: 30px;
+            width: 400px;
         }
 
         .row {
-            width: 100%;
-
             .col {
+                margin-bottom: 20px;
+
                 .wrapper {
                     margin-top: 0;
 
@@ -1510,8 +1536,7 @@
         }
 
         .owl-carousel {
-            margin-top: 30px;
-            width: calc(100%);
+            width: 100%;
             position: relative;
 
             .owl-nav {
@@ -1565,6 +1590,11 @@
 
             .row {
                 flex-wrap: wrap;
+                flex-direction: column;
+
+                .btn {
+                    width: 231px;
+                }
             }
         }
     }
@@ -1622,10 +1652,10 @@
 
         &__caption {
             position: absolute;
-            top: 85px;
+            top: 84px;
             right: -100%;
             padding: 24px 0 0 42px;
-            width: 70%;
+            width: 60%;
             height: auto;
             background: #131313e6;
             flex-direction: column;

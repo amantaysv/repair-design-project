@@ -20,11 +20,7 @@
         }
 
         &-toggler {
-            padding: 0;
-
             &.collapsed {
-                padding: 0;
-
                 .burger__line {
                     background: $yellow;
 
@@ -42,10 +38,8 @@
             }
 
             .burger {
-                align-items: center;
                 height: 26px;
                 width: 26px;
-                display: flex;
 
                 &__line {
                     position: relative;
@@ -54,15 +48,14 @@
                     background: none;
 
                     &::before {
-                        transform: rotate(135deg);
-                        top: 0;
-
                         content: '';
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                        background: $yellow;
+                        top: 0;
                         left: 0;
+                        background: $yellow;
+                        transform: rotate(135deg);
                         transition: .25s;
                     }
 
@@ -71,11 +64,11 @@
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                        background: $yellow;
-                        left: 0;
-                        transition: .25s;
-                        transform: rotate(45deg);
                         bottom: 0;
+                        left: 0;
+                        background: $yellow;
+                        transform: rotate(45deg);
+                        transition: .25s;
                     }
                 }
             }

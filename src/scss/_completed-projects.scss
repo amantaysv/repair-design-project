@@ -74,6 +74,8 @@
 
     .row {
         .col {
+            padding: 0;
+
             .wrapper {
                 margin-top: 34px;
                 font-family: $fbc;
@@ -121,6 +123,14 @@
                     background: none;
                 }
             }
+
+        }
+
+        .owl-dots {
+            position: absolute;
+            bottom: 0;
+            left: 72px;
+            margin: 0;
         }
     }
 }
