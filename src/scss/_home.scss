@@ -74,15 +74,17 @@
 
         p {
             transform: rotate(90deg) translate(-50%);
-            position: relative;
+            position: absolute;
             z-index: 1;
             top: 50%;
+            margin: 0;
+            left: 0;
 
             &::before {
                 position: absolute;
                 content: '';
                 top: 50%;
-                left: calc(100% + 8px);
+                left: 96px;
                 transform: translateY(-50%);
                 height: 1px;
                 width: 41px;

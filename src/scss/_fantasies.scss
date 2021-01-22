@@ -2,7 +2,7 @@
     position: relative;
 
     &__bg {
-        padding: 117px 100px 96px;
+        padding: 117px 100px 96px 82px;
         background: url(../images/fantasies/fantasies__bg.webp) center center/cover no-repeat;
         position: relative;
 
@@ -59,7 +59,7 @@
 
     &__content {
         display: none;
-        width: calc(100% - 390px);
+        width: calc(100% - 434px);
         margin: 0;
         margin-left: auto;
 

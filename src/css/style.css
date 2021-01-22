@@ -26,13 +26,18 @@ body {
   overflow: visible;
 }
 
+.container-fluid {
+  max-width: 1440px;
+  padding: 0;
+}
+
 .header {
   background: #131313;
 }
 
 .header .navbar {
   max-width: 1440px;
-  padding: 24px 115px 22px 97px;
+  padding: 24px 100px 22px 82px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -259,16 +264,18 @@ body {
 .home__link p {
   -webkit-transform: rotate(90deg) translate(-50%);
           transform: rotate(90deg) translate(-50%);
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 50%;
+  margin: 0;
+  left: 0;
 }
 
 .home__link p::before {
   position: absolute;
   content: '';
   top: 50%;
-  left: calc(100% + 8px);
+  left: 96px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 1px;
@@ -902,7 +909,6 @@ body {
   margin-left: auto;
   padding: 28px 49px 27px;
   max-width: 506px;
-  max-height: 509px;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1089,7 +1095,7 @@ body {
 }
 
 .fantasies__bg {
-  padding: 117px 100px 96px;
+  padding: 117px 100px 96px 82px;
   background: url(../images/fantasies/fantasies__bg.webp) center center/cover no-repeat;
   position: relative;
 }
@@ -1146,7 +1152,7 @@ body {
 
 .fantasies__content {
   display: none;
-  width: calc(100% - 390px);
+  width: calc(100% - 434px);
   margin: 0;
   margin-left: auto;
 }
@@ -1979,7 +1985,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 64% no-repeat;
   }
   .header .navbar {
-    max-width: calc(1140px - 1.5rem);
+    max-width: 1200px;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2130,7 +2136,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 63.4% no-repeat;
   }
   .header .navbar {
-    max-width: calc(960px - 1.5rem);
+    max-width: 992px;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2397,7 +2403,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.4% no-repeat;
   }
   .header .navbar {
-    max-width: calc(720px - 1.5rem);
+    max-width: 768px;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
@@ -2431,6 +2437,9 @@ body {
   }
   .home__link {
     width: 42px;
+  }
+  .home__link p {
+    left: -50%;
   }
   .completed-projects {
     padding: 107px 40px 0 42px;
@@ -2733,7 +2742,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 1875px/100% 37.5% no-repeat;
   }
   .header .navbar {
-    max-width: calc(540px - 1.5rem);
+    max-width: 576px;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
@@ -2795,6 +2804,9 @@ body {
   }
   .home__link {
     width: 42px;
+  }
+  .home__link p {
+    left: -50%;
   }
   .completed-projects {
     padding: 107px 40px 0 42px;
@@ -2922,7 +2934,7 @@ body {
   }
   .fantasies__caption {
     position: absolute;
-    top: 101px;
+    top: 84px;
     right: -100%;
     padding: 24px 0 0 42px;
     width: 50%;
@@ -3086,9 +3098,6 @@ body {
 }
 
 @media (max-width: 575px) {
-  .container {
-    padding: 0;
-  }
   .vector-bg__first {
     background: #fff url(../images/vector-bg/first.webp) center -280px no-repeat;
   }
@@ -3154,7 +3163,8 @@ body {
     width: 42px;
   }
   .home__link p {
-    top: 300px;
+    top: 270px;
+    left: -50%;
   }
   .completed-projects {
     padding: 85px 40px 85px 42px;
