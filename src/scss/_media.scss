@@ -618,6 +618,7 @@
             width: 42px;
 
             p {
+                top: 300px;
                 left: -50%;
             }
         }
@@ -1024,6 +1025,7 @@
             width: 42px;
 
             p {
+                top: 300px;
                 left: -50%;
             }
         }
@@ -1360,6 +1362,10 @@
 
     .home {
         padding-top: 80px;
+
+        .hidden {
+            display: none;
+        }
 
         &__bg {
             padding: 120px 20px 100px 62px;

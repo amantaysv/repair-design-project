@@ -2439,6 +2439,7 @@ body {
     width: 42px;
   }
   .home__link p {
+    top: 300px;
     left: -50%;
   }
   .completed-projects {
@@ -2806,6 +2807,7 @@ body {
     width: 42px;
   }
   .home__link p {
+    top: 300px;
     left: -50%;
   }
   .completed-projects {
@@ -3123,6 +3125,9 @@ body {
   }
   .home {
     padding-top: 80px;
+  }
+  .home .hidden {
+    display: none;
   }
   .home__bg {
     padding: 120px 20px 100px 62px;
