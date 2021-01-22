@@ -1,9 +1,4 @@
-@import url(../fonts/Futura/stylesheet.css);
-@import url(../fonts/YesevaOne/stylesheet.css);
-@import url(../fonts/ProximaNova/stylesheet.css);
-@import url(../libs/fontawesome/css/all.min.css);
 @import url(../libs/mdb-ui-kit/css/mdb.min.css);
-@import url(../libs/fancybox/css/jquery.fancybox.min.css);
 @import url(../libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css);
 @import url(../libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css);
 * {
@@ -1921,7 +1916,7 @@ body {
 }
 
 .footer .navbar {
-  padding: 49px 115px 47px 97px;
+  padding: 49px 100px 47px 82px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -1985,7 +1980,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 64% no-repeat;
   }
   .header .navbar {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2136,7 +2131,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 447px/100% 63.4% no-repeat;
   }
   .header .navbar {
-    max-width: 992px;
+    max-width: 100%;
     padding: 24px 40px 22px 82px;
   }
   .header .navbar-brand {
@@ -2403,7 +2398,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 947px/100% 44.4% no-repeat;
   }
   .header .navbar {
-    max-width: 768px;
+    max-width: 100%;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
@@ -2743,7 +2738,7 @@ body {
     background: #fff linear-gradient(#fff 0, #131313 0) center 1875px/100% 37.5% no-repeat;
   }
   .header .navbar {
-    max-width: 576px;
+    max-width: 100%;
     padding: 24px 40px 22px 42px;
   }
   .header .navbar-brand {
