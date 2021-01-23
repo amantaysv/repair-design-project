@@ -24,6 +24,7 @@ $('ul.fantasies__caption').on('click', 'li:not(.fantasies__tab_active)', functio
     .closest('div.fantasies__tabs').find('div.fantasies__content').removeClass('fantasies__content_active').eq($(this).index()).addClass('fantasies__content_active');
 });
 
+
 $('div.steps__caption').on('click', 'div:not(.steps__tab_active)', function () {
   $(this)
     .addClass('steps__tab_active').siblings().removeClass('steps__tab_active')
@@ -40,6 +41,16 @@ document.querySelector('.fantasies-burger').addEventListener('click', function (
 });
 
 document.querySelector('.completed-projects-burger').addEventListener('click', function () {
+  document.querySelector('.completed-projects-burger').classList.toggle('active');
+  document.querySelector('.completed-projects__caption').classList.toggle('active');
+});
+
+document.querySelector('.fantasies__caption').addEventListener('click', function () {
+  document.querySelector('.fantasies-burger').classList.toggle('active');
+  document.querySelector('.fantasies__caption').classList.toggle('active');
+});
+
+document.querySelector('.completed-projects__caption').addEventListener('click', function () {
   document.querySelector('.completed-projects-burger').classList.toggle('active');
   document.querySelector('.completed-projects__caption').classList.toggle('active');
 });

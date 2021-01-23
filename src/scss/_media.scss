@@ -238,9 +238,7 @@
                 }
 
                 .btn {
-                    width: 141px;
-                    height: 30px;
-                    font-size: 11px;
+                    @include btn(141px, 30px, 11px, $fdc);
                 }
             }
         }
@@ -265,6 +263,7 @@
             .btn {
                 width: 180px;
                 height: 48px;
+                line-height: 48px;
                 margin-right: 30px;
             }
         }
@@ -371,6 +370,7 @@
                     .btn {
                         width: 70%;
                         height: 40px;
+                        line-height: 40px;
                         font-size: 14px;
                         bottom: -20px;
                     }
@@ -448,6 +448,7 @@
                     .btn {
                         width: 70%;
                         height: 40px;
+                        line-height: 40px;
                         font-size: 12px;
                         bottom: -20px;
                     }
@@ -626,6 +627,7 @@
             .btn {
                 width: 180px;
                 height: 48px;
+                line-height: 48px;
                 margin-right: 30px;
             }
         }

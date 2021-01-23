@@ -43,7 +43,9 @@
                         <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn">request a call</button>
+                        <button type="button" class="btn" data-mdb-toggle="modal"
+                            data-mdb-target="#request-call">request
+                            a call</button>
                     </li>
                 </ul>
             </div>
@@ -220,7 +222,6 @@
                                         our company is presented on the site. For 14 years on in the construction
                                         market we have made happy more than 1000 families</div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col">
                                         <div class="wrapper">
@@ -1244,12 +1245,42 @@
                             <a class="nav-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn">request a call</button>
+                            <button type="button" class="btn" data-mdb-toggle="modal"
+                                data-mdb-target="#request-call">request
+                                a call</button>
                         </li>
                     </ul>
                 </div>
             </nav>
         </footer>
+    </div>
+    <div class="popup">
+        <div class="modal fade" id="request-call" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">request a call</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form class="request-call__form">
+                        <label for="" class="label col-12">
+                            <div class="text">Name</div>
+                            <input type="text" class="input" required placeholder="What is your name:">
+                        </label>
+                        <label for="" class="label col-12">
+                            <div class="text">Phone</div>
+                            <input type="tel" class="input" required placeholder="Your phone number:">
+                        </label>
+                        <label for="" class="checkbox">
+                            <input type="checkbox" class="input" checked="checked">
+                            <span class="checkmark"></span>
+                            I agree to the processing of personal data
+                        </label>
+                        <button class="btn">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <link rel="stylesheet" href="./src/fonts/Futura/stylesheet.css">
