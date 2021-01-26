@@ -20,6 +20,25 @@ body {
     padding: 0;
 }
 
+.up {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+    opacity: 70%;
+    z-index: 1;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @import "../scss/variables";
 @import "../scss/header";
 @import "../scss/home";
