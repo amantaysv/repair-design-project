@@ -1,6 +1,10 @@
 @media(min-width:1440px) {}
 
 @media (min-width:1200px) and (max-width:1439px) {
+    .backToTop {
+        left: calc(((100vw - 1140px) / 2) + 10px);
+    }
+
     .vector-bg {
         &__third {
             background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 65.2% no-repeat;
@@ -208,6 +212,10 @@
 }
 
 @media(min-width:992px) and (max-width: 1199px) {
+    .backToTop {
+        left: calc(((100vw - 960px) / 2) + 10px);
+    }
+
     .vector-bg {
         &__first {
             background: #fff url(../images/vector-bg/first.webp) center -180px no-repeat;
@@ -578,6 +586,10 @@
 }
 
 @media(min-width:768px) and (max-width: 991px) {
+    .backToTop {
+        left: calc(((100vw - 720px) / 2) + 10px);
+    }
+
     .vector-bg {
         &__first {
             background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;

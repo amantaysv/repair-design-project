@@ -54,3 +54,11 @@ document.querySelector('.completed-projects__caption').addEventListener('click',
   document.querySelector('.completed-projects-burger').classList.toggle('active');
   document.querySelector('.completed-projects__caption').classList.toggle('active');
 });
+
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 500){
+      $('.backToTop').fadeIn()
+  } else {
+      $('.backToTop').fadeOut()
+  }
+});

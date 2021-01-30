@@ -19,21 +19,19 @@ body {
   padding: 0;
 }
 
-.up {
+.backToTop {
   width: 60px;
   height: 60px;
-  background: #000;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  left: 0;
+  position: fixed;
+  bottom: 20px;
+  left: calc(((100vw - 1440px) / 2) + 20px);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  opacity: 70%;
+  display: none;
   z-index: 1;
 }
 
-.up img {
+.backToTop img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2151,6 +2149,9 @@ body {
 }
 
 @media (min-width: 1200px) and (max-width: 1439px) {
+  .backToTop {
+    left: calc(((100vw - 1140px) / 2) + 10px);
+  }
   .vector-bg__third {
     background: #fff -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0, #131313)) center 482px/100% 65.2% no-repeat;
     background: #fff linear-gradient(#fff 0, #131313 0) center 482px/100% 65.2% no-repeat;
@@ -2302,6 +2303,9 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .backToTop {
+    left: calc(((100vw - 960px) / 2) + 10px);
+  }
   .vector-bg__first {
     background: #fff url(../images/vector-bg/first.webp) center -180px no-repeat;
   }
@@ -2592,6 +2596,9 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .backToTop {
+    left: calc(((100vw - 720px) / 2) + 10px);
+  }
   .vector-bg__first {
     background: #fff url(../images/vector-bg/first.webp) center -150px no-repeat;
   }
